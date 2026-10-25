@@ -1,0 +1,109 @@
+site_name: Kafka Mastery Path
+site_description: A free Apache Kafka course — topics, partitions and the log, producers and consumers, delivery semantics, replication, Kafka Connect, Kafka Streams, and running a real KRaft cluster.
+site_url: https://sigilipelli.github.io/kafka-mastery-path/
+repo_url: https://github.com/sigilipelli/kafka-mastery-path
+repo_name: kafka-mastery-path
+
+theme:
+  name: material
+  favicon: assets/favicon.svg
+  custom_dir: docs/overrides
+  palette:
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: deep orange
+      accent: deep orange
+      toggle:
+        icon: material/brightness-7
+        name: Switch to dark mode
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: deep orange
+      accent: deep orange
+      toggle:
+        icon: material/brightness-4
+        name: Switch to light mode
+  features:
+    - navigation.tabs
+    - navigation.sections
+    - navigation.expand
+    - navigation.top
+    - navigation.footer
+    - navigation.indexes
+    - toc.follow
+    - content.code.copy
+    - content.code.annotate
+    - search.suggest
+    - search.highlight
+
+markdown_extensions:
+  - admonition
+  - pymdownx.highlight:
+      anchor_linenums: true
+  - pymdownx.inlinehilite
+  - pymdownx.superfences
+  - pymdownx.snippets
+  - pymdownx.tabbed:
+      alternate_style: true
+  - toc:
+      permalink: true
+
+extra_css:
+  - stylesheets/extra.css
+  - stylesheets/progress-tracker.css
+
+extra_javascript:
+  - javascripts/progress-tracker.js
+
+nav:
+  - Home: index.md
+  - Privacy Policy: privacy.md
+  - License: license.md
+  - "Level 1 · The Log, Topics & Partitions":
+      - Overview: level-1/index.md
+      - "01 · What Kafka Actually Is: The Log-Based Messaging Model": level-1/01-what-kafka-is.md
+      - "02 · Brokers, Clusters & KRaft": level-1/02-brokers-clusters-kraft.md
+      - "03 · Topics & Partitions: How the Log Is Really Stored": level-1/03-topics-partitions-log.md
+      - "04 · Producers: Keys, Partitioning & Batching": level-1/04-producers-keys-batching.md
+      - "05 · Consumers & Consumer Groups": level-1/05-consumers-consumer-groups.md
+      - "06 · The New Consumer Rebalance Protocol (KIP-848) vs Classic": level-1/06-rebalance-protocols.md
+      - "07 · Replication: Leaders, Followers & the ISR": level-1/07-replication-isr.md
+      - "08 · Delivery Semantics: At-Most-Once, At-Least-Once & Idempotence": level-1/08-delivery-semantics.md
+      - "09 · Retention & Compaction": level-1/09-retention-compaction.md
+      - "10 · Project — A Producer/Consumer Pipeline with Partition Keys": level-1/10-project-producer-consumer-pipeline.md
+  - "Level 2 · Operating a Cluster":
+      - Overview: level-2/index.md
+      - "01 · Multi-Broker Clusters & the KRaft Quorum in Practice": level-2/01-multi-broker-kraft-quorum.md
+      - "02 · Producer Configuration That Actually Matters": level-2/02-producer-configuration.md
+      - "03 · Consumer Configuration & Fetch Tuning": level-2/03-consumer-configuration.md
+      - "04 · Exactly-Once Semantics: Idempotence & Transactions": level-2/04-exactly-once-transactions.md
+      - "05 · Monitoring: The Metrics That Actually Matter": level-2/05-monitoring-metrics.md
+      - "06 · Log Segments, Indexes & Cleanup in Practice": level-2/06-segments-indexes-cleanup.md
+      - "07 · Security: SASL, SSL & ACLs": level-2/07-security-sasl-ssl-acls.md
+      - "08 · Partition Reassignment & Scaling a Cluster": level-2/08-reassignment-scaling.md
+      - "09 · Quotas & Multi-Tenancy": level-2/09-quotas-multi-tenancy.md
+      - "10 · Project — Diagnose a Consumer Lag Problem": level-2/10-project-consumer-lag.md
+  - "Level 3 · Kafka Connect & Kafka Streams":
+      - Overview: level-3/index.md
+      - "01 · Kafka Connect Architecture: Source & Sink Connectors": level-3/01-connect-architecture.md
+      - "02 · Running Connect Standalone": level-3/02-connect-standalone.md
+      - "03 · Running Connect Distributed & the REST API": level-3/03-connect-distributed-rest.md
+      - "04 · Kafka Streams Fundamentals: KStream vs KTable": level-3/04-streams-fundamentals.md
+      - "05 · Streams Stateful Operations & State Stores": level-3/05-streams-state-stores.md
+      - "06 · Streams Joins & Windowing": level-3/06-streams-joins-windowing.md
+      - "07 · Changelog Topics & Fault Tolerance": level-3/07-changelog-fault-tolerance.md
+      - "08 · Schema Evolution: Avro/Protobuf & Compatibility": level-3/08-schema-evolution.md
+      - "09 · Error Handling: Dead Letter Queues & Retries": level-3/09-error-handling-dlq.md
+      - "10 · Project — A Real Kafka Streams Application": level-3/10-project-streams-application.md
+  - "Level 4 · Production Kafka & Capstone":
+      - Overview: level-4/index.md
+      - "01 · Performance Tuning: Throughput vs Latency": level-4/01-performance-tuning.md
+      - "02 · Capacity Planning: Partitions, Replication & Disk": level-4/02-capacity-planning.md
+      - "03 · Troubleshooting: Under-Replicated Partitions & ISR Shrink": level-4/03-troubleshooting-common-failures.md
+      - "04 · Disaster Recovery & Geo-Replication with MirrorMaker 2": level-4/04-disaster-recovery-mirrormaker.md
+      - "05 · Upgrades, Compatibility & the ZooKeeper-to-KRaft Migration": level-4/05-upgrades-kraft-migration.md
+      - "06 · Kafka vs Other Messaging Systems": level-4/06-kafka-vs-other-systems.md
+      - "07 · Event-Driven Patterns: Event Sourcing, CQRS & the Outbox": level-4/07-event-driven-patterns.md
+      - "08 · Kafka on Kubernetes with Strimzi": level-4/08-kafka-on-kubernetes.md
+      - "09 · Cost & Operational Tradeoffs at Scale": level-4/09-cost-operational-tradeoffs.md
+      - "10 · Capstone — Build, Break & Diagnose a Small Event-Driven Pipeline": level-4/10-capstone-event-driven-pipeline.md
