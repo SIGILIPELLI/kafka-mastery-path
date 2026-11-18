@@ -1,6 +1,6 @@
 site_name: Kafka Mastery Path
 site_description: A free Apache Kafka course — topics, partitions and the log, producers and consumers, delivery semantics, replication, Kafka Connect, Kafka Streams, and running a real KRaft cluster.
-site_url: https://sigilipelli.github.io/kafka-mastery-path/
+site_url: https://learnmasterypath.com/kafka-mastery-path/
 repo_url: https://github.com/sigilipelli/kafka-mastery-path
 repo_name: kafka-mastery-path
 

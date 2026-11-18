@@ -18,7 +18,7 @@ gotcha this course hit while building it.
     stated in that lesson specifically.
 
 **Prerequisites:** Level 1 and 2. Basic Java familiarity helps for reading Streams code, though the DSL itself is
-approachable without deep Java experience — see the [Java Mastery Path](https://sigilipelli.github.io/java-mastery-path/)
+approachable without deep Java experience — see the [Java Mastery Path](https://learnmasterypath.com/java-mastery-path/)
 if you want it in depth first.
 
 ## Modules
