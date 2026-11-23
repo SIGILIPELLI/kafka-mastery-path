@@ -77,11 +77,13 @@ extra:
     - name: "Kubernetes"
       url: https://learnmasterypath.com/kubernetes-mastery-path/
 
+not_in_nav: |
+  privacy.md
+  license.md
+
 nav:
   - Home: index.md
   - "💼 Interview Questions": interview-questions.md
-  - Privacy Policy: privacy.md
-  - License: license.md
   - "Level 1 · The Log, Topics & Partitions":
       - Overview: level-1/index.md
       - "01 · What Kafka Actually Is: The Log-Based Messaging Model": level-1/01-what-kafka-is.md
