@@ -83,7 +83,7 @@ not_in_nav: |
 
 nav:
   - Home: index.md
-  - "💼 Interview Questions": interview-questions.md
+  - Interview Questions: interview-questions.md
   - "Level 1 · The Log, Topics & Partitions":
       - Overview: level-1/index.md
       - "01 · What Kafka Actually Is: The Log-Based Messaging Model": level-1/01-what-kafka-is.md
@@ -132,5 +132,5 @@ nav:
       - "08 · Kafka on Kubernetes with Strimzi": level-4/08-kafka-on-kubernetes.md
       - "09 · Cost & Operational Tradeoffs at Scale": level-4/09-cost-operational-tradeoffs.md
       - "10 · Capstone — Build, Break & Diagnose a Small Event-Driven Pipeline": level-4/10-capstone-event-driven-pipeline.md
-  - "🎯 Final Quiz": quiz.md
+  - Final Quiz: quiz.md
 
