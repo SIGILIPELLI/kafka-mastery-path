@@ -1,6 +1,6 @@
 ---
 title: "Free Apache Kafka Course: Topics, Partitions, Producers, Consumers, Delivery Semantics, Connect, Streams & KRaft"
-description: "Free Kafka course: 36 lessons and 4 projects on topics/partitions, producers/consumers, delivery semantics, replication, Connect, Streams and KRaft."
+description: "Free Kafka course: 36 lessons, 3 projects and 1 capstone on topics/partitions, producers/consumers, delivery semantics, replication, Connect, Streams and KRaft."
 ---
 
 # Kafka Mastery Path
@@ -30,7 +30,7 @@ assumed, though if you want Java itself in depth first, see the [Java Mastery Pa
 | **3 · Kafka Connect & Kafka Streams** | Connect architecture and the REST API, Streams topology, state stores, joins/windows, schema evolution | 10 | Build real ingestion pipelines and stream-processing apps |
 | **4 · Production Kafka & Capstone** | Performance, capacity planning, failure modes, disaster recovery, event-driven patterns, Kubernetes | 10 | Plan, operate, and troubleshoot Kafka in production |
 
-Each level has 9 teaching modules plus a hands-on project (module 10), which makes **36 lessons and 4 projects** in total.
+Each level has 9 teaching modules plus a hands-on project (module 10), which makes **36 lessons, 3 projects and 1 capstone** in total.
 
 ## How to use this site
 
