@@ -1,0 +1,4302 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="179 Kafka interview questions with answers and explanations, from beginner to advanced, organised by level. Free, from the Kafka Mastery Path.">
+      
+      
+      
+        <link rel="canonical" href="https://learnmasterypath.com/kafka-mastery-path/interview-questions/">
+      
+      
+        <link rel="prev" href="..">
+      
+      
+        <link rel="next" href="../level-1/">
+      
+      
+        
+      
+      
+      <link rel="icon" href="../assets/favicon.svg">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.8.2">
+    
+    
+  
+  <title>Kafka Interview Questions and Answers (179 Questions)</title>
+
+    
+      <link rel="stylesheet" href="../assets/stylesheets/main.57a0d79d.min.css">
+      
+        
+        <link rel="stylesheet" href="../assets/stylesheets/palette.fb2fffe2.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+    
+    
+      <link rel="stylesheet" href="../stylesheets/extra.css">
+    
+      <link rel="stylesheet" href="../stylesheets/progress-tracker.css">
+    
+      <link rel="stylesheet" href="../stylesheets/final-quiz.css">
+    
+    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-05VBGCXN12"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-05VBGCXN12');
+  </script>
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Mastery Path">
+  <meta property="og:locale" content="en_US">
+  <meta property="og:title" content="Kafka Interview Questions and Answers (179 Questions)">
+  <meta property="og:description" content="179 Kafka interview questions with answers and explanations, from beginner to advanced, organised by level. Free, from the Kafka Mastery Path.">
+  <meta property="og:url" content="https://learnmasterypath.com/kafka-mastery-path/interview-questions/">
+  <meta property="og:image" content="https://learnmasterypath.com/og-image.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="Mastery Path: free structured courses, beginner to master">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Kafka Interview Questions and Answers (179 Questions)">
+  <meta name="twitter:description" content="179 Kafka interview questions with answers and explanations, from beginner to advanced, organised by level. Free, from the Kafka Mastery Path.">
+  <meta name="twitter:image" content="https://learnmasterypath.com/og-image.png">
+  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9440969811959397"
+     crossorigin="anonymous"></script><script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {"@type": "ListItem", "position": 1, "name": "Mastery Path", "item": "https://learnmasterypath.com/"},
+      {"@type": "ListItem", "position": 2, "name": "Kafka Mastery Path", "item": "https://learnmasterypath.com/kafka-mastery-path/"},
+      {"@type": "ListItem", "position": 3, "name": "Interview Questions", "item": "https://learnmasterypath.com/kafka-mastery-path/interview-questions/"}
+    ]
+  }
+  </script>
+  <style>
+    .md-banner a:hover { text-decoration: underline !important; }
+    .mp-related { margin-top: 2.4rem; padding-top: 1rem; border-top: 1px solid var(--md-default-fg-color--lightest); font-size: .78rem; }
+    .mp-related h2 { font-size: .9rem; margin: 0 0 .5rem; }
+    .mp-related ul { list-style: none; margin: 0; padding: 0; display: flex; flex-wrap: wrap; gap: .4rem .9rem; }
+    .mp-related li { margin: 0 !important; }
+  </style>
+  <script type="application/json" id="mp-course-meta">{"home": false, "id": "kafka-mastery-path", "name": "Kafka Mastery Path", "repo": "https://github.com/sigilipelli/kafka-mastery-path", "src": "interview-questions.md", "url": "https://learnmasterypath.com/kafka-mastery-path/"}</script>
+  <link rel="stylesheet" href="https://learnmasterypath.com/assets/learn.css">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap">
+  <link rel="stylesheet" href="https://learnmasterypath.com/assets/course.css?v=1">
+  <script src="https://learnmasterypath.com/assets/learn.js" defer></script>
+  <script src="https://learnmasterypath.com/assets/signup.js" defer></script>
+
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="deep-orange" data-md-color-accent="deep-orange">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#kafka-interview-questions-and-answers" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+        <aside class="md-banner">
+          <div class="md-banner__inner md-grid md-typeset">
+            
+            
+  <a href="https://learnmasterypath.com/" style="color: inherit; text-decoration: none;">
+    &larr; Mastery Path &middot; all 100+ free courses
+  </a>
+  <span style="opacity: .6; margin: 0 .6em;">|</span>
+  <a href="https://learnmasterypath.com/search/" style="color: inherit; text-decoration: none;">Search all courses</a>
+  <span style="opacity: .6; margin: 0 .6em;">|</span>
+  <a href="https://learnmasterypath.com/resume/" style="color: inherit; font-weight: 700; text-decoration: none;">
+    Got the skills? Free resume ATS check &rarr;
+  </a>
+
+          </div>
+          
+        </aside>
+      
+    </div>
+    
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href=".." title="Kafka Mastery Path" class="md-header__button md-logo" aria-label="Kafka Mastery Path" data-md-component="logo">
+      <svg class="mp-mark" viewBox="0 0 160 160" role="img" aria-label="Mastery Path logo">
+  <circle cx="80" cy="80" r="74" fill="#FAF7EF" stroke="#2FA98D" stroke-width="5"/>
+  <rect class="mp-bar mp-bar-1" x="36" y="90" width="17" height="24" rx="5" fill="#2FA98D"/>
+  <rect class="mp-bar mp-bar-2" x="59" y="74" width="17" height="40" rx="5" fill="#7FC9B7"/>
+  <rect class="mp-bar mp-bar-3" x="82" y="56" width="17" height="58" rx="5" fill="#E0B457"/>
+  <rect class="mp-bar mp-bar-4" x="105" y="38" width="17" height="76" rx="5" fill="#C97B4A"/>
+  <circle class="mp-dot" cx="44.5" cy="82" r="7" fill="#22261f"/>
+</svg>
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Kafka Mastery Path
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Kafka Interview Questions and Answers (179 Questions)
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: light)" data-md-color-scheme="default" data-md-color-primary="deep-orange" data-md-color-accent="deep-orange"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a4 4 0 0 0-4 4 4 4 0 0 0 4 4 4 4 0 0 0 4-4 4 4 0 0 0-4-4m0 10a6 6 0 0 1-6-6 6 6 0 0 1 6-6 6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: dark)" data-md-color-scheme="slate" data-md-color-primary="deep-orange" data-md-color-accent="deep-orange"  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 18c-.89 0-1.74-.2-2.5-.55C11.56 16.5 13 14.42 13 12s-1.44-4.5-3.5-5.45C10.26 6.2 11.11 6 12 6a6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+        <div class="md-search__suggest" data-md-component="search-suggest"></div>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/sigilipelli/kafka-mastery-path" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"/></svg>
+  </div>
+  <div class="md-source__repository">
+    kafka-mastery-path
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+            
+<nav class="md-tabs" aria-label="Tabs" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href=".." class="md-tabs__link">
+        
+  
+  
+    
+  
+  Home
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+    
+  
+  
+    <li class="md-tabs__item md-tabs__item--active">
+      <a href="./" class="md-tabs__link">
+        
+  
+  
+    
+  
+  Interview Questions
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../level-1/" class="md-tabs__link">
+          
+  
+  
+    
+  
+  Level 1 · The Log, Topics & Partitions
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../level-2/" class="md-tabs__link">
+          
+  
+  
+    
+  
+  Level 2 · Operating a Cluster
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../level-3/" class="md-tabs__link">
+          
+  
+  
+    
+  
+  Level 3 · Kafka Connect & Kafka Streams
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../level-4/" class="md-tabs__link">
+          
+  
+  
+    
+  
+  Level 4 · Production Kafka & Capstone
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../quiz/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  Final Quiz
+
+      </a>
+    </li>
+  
+
+      
+    </ul>
+  </div>
+</nav>
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href=".." title="Kafka Mastery Path" class="md-nav__button md-logo" aria-label="Kafka Mastery Path" data-md-component="logo">
+      <svg class="mp-mark" viewBox="0 0 160 160" role="img" aria-label="Mastery Path logo">
+  <circle cx="80" cy="80" r="74" fill="#FAF7EF" stroke="#2FA98D" stroke-width="5"/>
+  <rect class="mp-bar mp-bar-1" x="36" y="90" width="17" height="24" rx="5" fill="#2FA98D"/>
+  <rect class="mp-bar mp-bar-2" x="59" y="74" width="17" height="40" rx="5" fill="#7FC9B7"/>
+  <rect class="mp-bar mp-bar-3" x="82" y="56" width="17" height="58" rx="5" fill="#E0B457"/>
+  <rect class="mp-bar mp-bar-4" x="105" y="38" width="17" height="76" rx="5" fill="#C97B4A"/>
+  <circle class="mp-dot" cx="44.5" cy="82" r="7" fill="#22261f"/>
+</svg>
+    </a>
+    Kafka Mastery Path
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/sigilipelli/kafka-mastery-path" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"/></svg>
+  </div>
+  <div class="md-source__repository">
+    kafka-mastery-path
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href=".." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Home
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Interview Questions
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Interview Questions
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#level-1-the-log-topics-partitions" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Level 1 · The Log, Topics &amp; Partitions
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Level 1 · The Log, Topics &amp; Partitions">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#01-what-kafka-actually-is-the-log-based-messaging-model" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        01 · What Kafka Actually Is: The Log-Based Messaging Model
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#02-brokers-clusters-kraft" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        02 · Brokers, Clusters &amp; KRaft
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#03-topics-partitions-how-the-log-is-really-stored" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        03 · Topics &amp; Partitions: How the Log Is Really Stored
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#04-producers-keys-partitioning-batching" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        04 · Producers: Keys, Partitioning &amp; Batching
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#05-consumers-consumer-groups" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        05 · Consumers &amp; Consumer Groups
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#06-the-new-consumer-rebalance-protocol-kip-848-vs-classic" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        06 · The New Consumer Rebalance Protocol (KIP-848) vs Classic
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#07-replication-leaders-followers-the-isr" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        07 · Replication: Leaders, Followers &amp; the ISR
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#08-delivery-semantics-at-most-once-at-least-once-idempotence" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        08 · Delivery Semantics: At-Most-Once, At-Least-Once &amp; Idempotence
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#09-retention-compaction" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        09 · Retention &amp; Compaction
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#10-project-a-producerconsumer-pipeline-with-partition-keys" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        10 · Project: A Producer/Consumer Pipeline with Partition Keys
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#level-2-operating-a-cluster" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Level 2 · Operating a Cluster
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Level 2 · Operating a Cluster">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#01-multi-broker-clusters-the-kraft-quorum-in-practice" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        01 · Multi-Broker Clusters &amp; the KRaft Quorum in Practice
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#02-producer-configuration-that-actually-matters" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        02 · Producer Configuration That Actually Matters
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#03-consumer-configuration-fetch-tuning" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        03 · Consumer Configuration &amp; Fetch Tuning
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#04-exactly-once-semantics-idempotence-transactions" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        04 · Exactly-Once Semantics: Idempotence &amp; Transactions
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#05-monitoring-the-metrics-that-actually-matter" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        05 · Monitoring: The Metrics That Actually Matter
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#06-log-segments-indexes-cleanup-in-practice" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        06 · Log Segments, Indexes &amp; Cleanup in Practice
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#07-security-sasl-ssl-acls" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        07 · Security: SASL, SSL &amp; ACLs
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#08-partition-reassignment-scaling-a-cluster" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        08 · Partition Reassignment &amp; Scaling a Cluster
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#09-quotas-multi-tenancy" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        09 · Quotas &amp; Multi-Tenancy
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#10-project-diagnose-a-consumer-lag-problem" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        10 · Project: Diagnose a Consumer Lag Problem
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#level-3-kafka-connect-kafka-streams" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Level 3 · Kafka Connect &amp; Kafka Streams
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Level 3 · Kafka Connect &amp; Kafka Streams">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#01-kafka-connect-architecture-source-sink-connectors" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        01 · Kafka Connect Architecture: Source &amp; Sink Connectors
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#02-running-connect-standalone" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        02 · Running Connect Standalone
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#03-running-connect-distributed-the-rest-api" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        03 · Running Connect Distributed &amp; the REST API
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#04-kafka-streams-fundamentals-kstream-vs-ktable" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        04 · Kafka Streams Fundamentals: KStream vs KTable
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#05-streams-stateful-operations-state-stores" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        05 · Streams Stateful Operations &amp; State Stores
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#06-streams-joins-windowing" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        06 · Streams Joins &amp; Windowing
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#07-changelog-topics-fault-tolerance" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        07 · Changelog Topics &amp; Fault Tolerance
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#08-schema-evolution-avroprotobuf-compatibility" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        08 · Schema Evolution: Avro/Protobuf &amp; Compatibility
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#09-error-handling-dead-letter-queues-retries" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        09 · Error Handling: Dead Letter Queues &amp; Retries
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#10-project-a-real-kafka-streams-application" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        10 · Project: A Real Kafka Streams Application
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#level-4-production-kafka-capstone" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Level 4 · Production Kafka &amp; Capstone
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Level 4 · Production Kafka &amp; Capstone">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#01-performance-tuning-throughput-vs-latency" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        01 · Performance Tuning: Throughput vs Latency
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#02-capacity-planning-partitions-replication-disk" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        02 · Capacity Planning: Partitions, Replication &amp; Disk
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#03-troubleshooting-under-replicated-partitions-isr-shrink" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        03 · Troubleshooting: Under-Replicated Partitions &amp; ISR Shrink
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#04-disaster-recovery-geo-replication-with-mirrormaker-2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        04 · Disaster Recovery &amp; Geo-Replication with MirrorMaker 2
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#05-upgrades-compatibility-the-zookeeper-to-kraft-migration" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        05 · Upgrades, Compatibility &amp; the ZooKeeper-to-KRaft Migration
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#06-kafka-vs-other-messaging-systems" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        06 · Kafka vs Other Messaging Systems
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#07-event-driven-patterns-event-sourcing-cqrs-the-outbox" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        07 · Event-Driven Patterns: Event Sourcing, CQRS &amp; the Outbox
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#08-kafka-on-kubernetes-with-strimzi" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        08 · Kafka on Kubernetes with Strimzi
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#09-cost-operational-tradeoffs-at-scale" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        09 · Cost &amp; Operational Tradeoffs at Scale
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#10-capstone-build-break-diagnose-a-small-event-driven-pipeline" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        10 · Capstone: Build, Break &amp; Diagnose a Small Event-Driven Pipeline
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#mixed-questions-across-all-levels" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Mixed questions across all levels
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#practical-coding-questions" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Practical coding questions
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Practical coding questions">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#partitions-consumer-groups-and-lag" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Partitions, consumer groups and lag
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#idempotent-producer-and-at-least-once-consumer" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Idempotent producer and at-least-once consumer
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_3" >
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../level-1/" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Level 1 · The Log, Topics & Partitions
+  
+
+    
+  </span>
+  
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_3" id="__nav_3_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Level 1 · The Log, Topics & Partitions
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../level-1/01-what-kafka-is/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    01 · What Kafka Actually Is: The Log-Based Messaging Model
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../level-1/02-brokers-clusters-kraft/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    02 · Brokers, Clusters & KRaft
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../level-1/03-topics-partitions-log/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    03 · Topics & Partitions: How the Log Is Really Stored
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../level-1/04-producers-keys-batching/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    04 · Producers: Keys, Partitioning & Batching
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../level-1/05-consumers-consumer-groups/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    05 · Consumers & Consumer Groups
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../level-1/06-rebalance-protocols/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    06 · The New Consumer Rebalance Protocol (KIP-848) vs Classic
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../level-1/07-replication-isr/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    07 · Replication: Leaders, Followers & the ISR
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../level-1/08-delivery-semantics/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    08 · Delivery Semantics: At-Most-Once, At-Least-Once & Idempotence
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../level-1/09-retention-compaction/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    09 · Retention & Compaction
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../level-1/10-project-producer-consumer-pipeline/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    10 · Project — A Producer/Consumer Pipeline with Partition Keys
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_4" >
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../level-2/" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Level 2 · Operating a Cluster
+  
+
+    
+  </span>
+  
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_4" id="__nav_4_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Level 2 · Operating a Cluster
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../level-2/01-multi-broker-kraft-quorum/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    01 · Multi-Broker Clusters & the KRaft Quorum in Practice
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../level-2/02-producer-configuration/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    02 · Producer Configuration That Actually Matters
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../level-2/03-consumer-configuration/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    03 · Consumer Configuration & Fetch Tuning
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../level-2/04-exactly-once-transactions/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    04 · Exactly-Once Semantics: Idempotence & Transactions
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../level-2/05-monitoring-metrics/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    05 · Monitoring: The Metrics That Actually Matter
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../level-2/06-segments-indexes-cleanup/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    06 · Log Segments, Indexes & Cleanup in Practice
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../level-2/07-security-sasl-ssl-acls/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    07 · Security: SASL, SSL & ACLs
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../level-2/08-reassignment-scaling/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    08 · Partition Reassignment & Scaling a Cluster
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../level-2/09-quotas-multi-tenancy/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    09 · Quotas & Multi-Tenancy
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../level-2/10-project-consumer-lag/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    10 · Project — Diagnose a Consumer Lag Problem
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_5" >
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../level-3/" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Level 3 · Kafka Connect & Kafka Streams
+  
+
+    
+  </span>
+  
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_5" id="__nav_5_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_5">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Level 3 · Kafka Connect & Kafka Streams
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../level-3/01-connect-architecture/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    01 · Kafka Connect Architecture: Source & Sink Connectors
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../level-3/02-connect-standalone/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    02 · Running Connect Standalone
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../level-3/03-connect-distributed-rest/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    03 · Running Connect Distributed & the REST API
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../level-3/04-streams-fundamentals/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    04 · Kafka Streams Fundamentals: KStream vs KTable
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../level-3/05-streams-state-stores/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    05 · Streams Stateful Operations & State Stores
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../level-3/06-streams-joins-windowing/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    06 · Streams Joins & Windowing
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../level-3/07-changelog-fault-tolerance/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    07 · Changelog Topics & Fault Tolerance
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../level-3/08-schema-evolution/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    08 · Schema Evolution: Avro/Protobuf & Compatibility
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../level-3/09-error-handling-dlq/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    09 · Error Handling: Dead Letter Queues & Retries
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../level-3/10-project-streams-application/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    10 · Project — A Real Kafka Streams Application
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_6" >
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../level-4/" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Level 4 · Production Kafka & Capstone
+  
+
+    
+  </span>
+  
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_6" id="__nav_6_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_6_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_6">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Level 4 · Production Kafka & Capstone
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../level-4/01-performance-tuning/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    01 · Performance Tuning: Throughput vs Latency
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../level-4/02-capacity-planning/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    02 · Capacity Planning: Partitions, Replication & Disk
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../level-4/03-troubleshooting-common-failures/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    03 · Troubleshooting: Under-Replicated Partitions & ISR Shrink
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../level-4/04-disaster-recovery-mirrormaker/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    04 · Disaster Recovery & Geo-Replication with MirrorMaker 2
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../level-4/05-upgrades-kraft-migration/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    05 · Upgrades, Compatibility & the ZooKeeper-to-KRaft Migration
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../level-4/06-kafka-vs-other-systems/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    06 · Kafka vs Other Messaging Systems
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../level-4/07-event-driven-patterns/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    07 · Event-Driven Patterns: Event Sourcing, CQRS & the Outbox
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../level-4/08-kafka-on-kubernetes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    08 · Kafka on Kubernetes with Strimzi
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../level-4/09-cost-operational-tradeoffs/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    09 · Cost & Operational Tradeoffs at Scale
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../level-4/10-capstone-event-driven-pipeline/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    10 · Capstone — Build, Break & Diagnose a Small Event-Driven Pipeline
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../quiz/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Final Quiz
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#level-1-the-log-topics-partitions" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Level 1 · The Log, Topics &amp; Partitions
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Level 1 · The Log, Topics &amp; Partitions">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#01-what-kafka-actually-is-the-log-based-messaging-model" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        01 · What Kafka Actually Is: The Log-Based Messaging Model
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#02-brokers-clusters-kraft" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        02 · Brokers, Clusters &amp; KRaft
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#03-topics-partitions-how-the-log-is-really-stored" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        03 · Topics &amp; Partitions: How the Log Is Really Stored
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#04-producers-keys-partitioning-batching" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        04 · Producers: Keys, Partitioning &amp; Batching
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#05-consumers-consumer-groups" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        05 · Consumers &amp; Consumer Groups
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#06-the-new-consumer-rebalance-protocol-kip-848-vs-classic" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        06 · The New Consumer Rebalance Protocol (KIP-848) vs Classic
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#07-replication-leaders-followers-the-isr" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        07 · Replication: Leaders, Followers &amp; the ISR
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#08-delivery-semantics-at-most-once-at-least-once-idempotence" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        08 · Delivery Semantics: At-Most-Once, At-Least-Once &amp; Idempotence
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#09-retention-compaction" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        09 · Retention &amp; Compaction
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#10-project-a-producerconsumer-pipeline-with-partition-keys" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        10 · Project: A Producer/Consumer Pipeline with Partition Keys
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#level-2-operating-a-cluster" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Level 2 · Operating a Cluster
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Level 2 · Operating a Cluster">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#01-multi-broker-clusters-the-kraft-quorum-in-practice" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        01 · Multi-Broker Clusters &amp; the KRaft Quorum in Practice
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#02-producer-configuration-that-actually-matters" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        02 · Producer Configuration That Actually Matters
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#03-consumer-configuration-fetch-tuning" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        03 · Consumer Configuration &amp; Fetch Tuning
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#04-exactly-once-semantics-idempotence-transactions" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        04 · Exactly-Once Semantics: Idempotence &amp; Transactions
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#05-monitoring-the-metrics-that-actually-matter" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        05 · Monitoring: The Metrics That Actually Matter
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#06-log-segments-indexes-cleanup-in-practice" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        06 · Log Segments, Indexes &amp; Cleanup in Practice
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#07-security-sasl-ssl-acls" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        07 · Security: SASL, SSL &amp; ACLs
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#08-partition-reassignment-scaling-a-cluster" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        08 · Partition Reassignment &amp; Scaling a Cluster
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#09-quotas-multi-tenancy" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        09 · Quotas &amp; Multi-Tenancy
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#10-project-diagnose-a-consumer-lag-problem" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        10 · Project: Diagnose a Consumer Lag Problem
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#level-3-kafka-connect-kafka-streams" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Level 3 · Kafka Connect &amp; Kafka Streams
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Level 3 · Kafka Connect &amp; Kafka Streams">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#01-kafka-connect-architecture-source-sink-connectors" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        01 · Kafka Connect Architecture: Source &amp; Sink Connectors
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#02-running-connect-standalone" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        02 · Running Connect Standalone
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#03-running-connect-distributed-the-rest-api" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        03 · Running Connect Distributed &amp; the REST API
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#04-kafka-streams-fundamentals-kstream-vs-ktable" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        04 · Kafka Streams Fundamentals: KStream vs KTable
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#05-streams-stateful-operations-state-stores" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        05 · Streams Stateful Operations &amp; State Stores
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#06-streams-joins-windowing" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        06 · Streams Joins &amp; Windowing
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#07-changelog-topics-fault-tolerance" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        07 · Changelog Topics &amp; Fault Tolerance
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#08-schema-evolution-avroprotobuf-compatibility" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        08 · Schema Evolution: Avro/Protobuf &amp; Compatibility
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#09-error-handling-dead-letter-queues-retries" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        09 · Error Handling: Dead Letter Queues &amp; Retries
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#10-project-a-real-kafka-streams-application" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        10 · Project: A Real Kafka Streams Application
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#level-4-production-kafka-capstone" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Level 4 · Production Kafka &amp; Capstone
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Level 4 · Production Kafka &amp; Capstone">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#01-performance-tuning-throughput-vs-latency" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        01 · Performance Tuning: Throughput vs Latency
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#02-capacity-planning-partitions-replication-disk" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        02 · Capacity Planning: Partitions, Replication &amp; Disk
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#03-troubleshooting-under-replicated-partitions-isr-shrink" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        03 · Troubleshooting: Under-Replicated Partitions &amp; ISR Shrink
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#04-disaster-recovery-geo-replication-with-mirrormaker-2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        04 · Disaster Recovery &amp; Geo-Replication with MirrorMaker 2
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#05-upgrades-compatibility-the-zookeeper-to-kraft-migration" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        05 · Upgrades, Compatibility &amp; the ZooKeeper-to-KRaft Migration
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#06-kafka-vs-other-messaging-systems" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        06 · Kafka vs Other Messaging Systems
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#07-event-driven-patterns-event-sourcing-cqrs-the-outbox" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        07 · Event-Driven Patterns: Event Sourcing, CQRS &amp; the Outbox
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#08-kafka-on-kubernetes-with-strimzi" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        08 · Kafka on Kubernetes with Strimzi
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#09-cost-operational-tradeoffs-at-scale" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        09 · Cost &amp; Operational Tradeoffs at Scale
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#10-capstone-build-break-diagnose-a-small-event-driven-pipeline" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        10 · Capstone: Build, Break &amp; Diagnose a Small Event-Driven Pipeline
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#mixed-questions-across-all-levels" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Mixed questions across all levels
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#practical-coding-questions" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Practical coding questions
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Practical coding questions">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#partitions-consumer-groups-and-lag" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Partitions, consumer groups and lag
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#idempotent-producer-and-at-least-once-consumer" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Idempotent producer and at-least-once consumer
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+                
+
+
+
+  
+
+
+              
+              <article class="md-content__inner md-typeset">
+                
+  
+                  
+
+
+  
+  
+
+
+<h1 id="kafka-interview-questions-and-answers">Kafka Interview Questions and Answers<a class="headerlink" href="#kafka-interview-questions-and-answers" title="Permanent link">&para;</a></h1>
+<p><strong>179 questions</strong> with the correct answer and a short explanation, organised from beginner (Level 1) to advanced (Level 4). Every question comes from a lesson in the free Kafka Mastery Path, so you can open the lesson to go deeper.</p>
+<div class="admonition tip">
+<p class="admonition-title">Practise, don't just read</p>
+<p>Each lesson also ends with an interactive quiz, and the <a href="../quiz/">final quiz</a> tests all four levels. Try to answer each question below before reading the answer.</p>
+</div>
+<h2 id="level-1-the-log-topics-partitions">Level 1 · The Log, Topics &amp; Partitions<a class="headerlink" href="#level-1-the-log-topics-partitions" title="Permanent link">&para;</a></h2>
+<h3 id="01-what-kafka-actually-is-the-log-based-messaging-model"><a href="../level-1/01-what-kafka-is/">01 · What Kafka Actually Is: The Log-Based Messaging Model</a><a class="headerlink" href="#01-what-kafka-actually-is-the-log-based-messaging-model" title="Permanent link">&para;</a></h3>
+<p><strong>Q1.</strong> What is Kafka at its core?</p>
+<p><strong>Answer:</strong> A distributed, durable, append-only commit log for streaming events</p>
+<p>Producers write, consumers read at their own pace.</p>
+<p><strong>Q2.</strong> How does Kafka differ from a traditional queue?</p>
+<p><strong>Answer:</strong> Messages are retained and can be re-read by many independent consumers</p>
+<p>Consumers track offsets.</p>
+<p><strong>Q3.</strong> What problem does Kafka solve between systems?</p>
+<p><strong>Answer:</strong> Decoupling producers from consumers with scalable, replayable event streams</p>
+<p>Integration backbone.</p>
+<p><strong>Q4.</strong> Is Kafka's default delivery model push or pull?</p>
+<p><strong>Answer:</strong> Pull: consumers fetch at their own rate</p>
+<p>Natural backpressure.</p>
+<h3 id="02-brokers-clusters-kraft"><a href="../level-1/02-brokers-clusters-kraft/">02 · Brokers, Clusters &amp; KRaft</a><a class="headerlink" href="#02-brokers-clusters-kraft" title="Permanent link">&para;</a></h3>
+<p><strong>Q5.</strong> What does a Kafka broker do?</p>
+<p><strong>Answer:</strong> Stores partitions and serves produce/fetch requests</p>
+<p>A cluster is many brokers.</p>
+<p><strong>Q6.</strong> What replaced ZooKeeper for metadata?</p>
+<p><strong>Answer:</strong> KRaft: Raft-based controller quorum inside Kafka</p>
+<p>No external ZooKeeper.</p>
+<p><strong>Q7.</strong> How many controllers keep a quorum with 3 voters?</p>
+<p><strong>Answer:</strong> 2 (a majority)</p>
+<p>Tolerates one failure.</p>
+<p><strong>Q8.</strong> What's a cluster ID for?</p>
+<p><strong>Answer:</strong> Uniquely identifying the cluster and formatting KRaft storage</p>
+<p>kafka-storage format.</p>
+<h3 id="03-topics-partitions-how-the-log-is-really-stored"><a href="../level-1/03-topics-partitions-log/">03 · Topics &amp; Partitions: How the Log Is Really Stored</a><a class="headerlink" href="#03-topics-partitions-how-the-log-is-really-stored" title="Permanent link">&para;</a></h3>
+<p><strong>Q9.</strong> What is a topic partition?</p>
+<p><strong>Answer:</strong> An ordered, immutable log; the unit of parallelism and ordering</p>
+<p>Order only within a partition.</p>
+<p><strong>Q10.</strong> What is an offset?</p>
+<p><strong>Answer:</strong> A message's sequential position within a partition</p>
+<p>Per partition.</p>
+<p><strong>Q11.</strong> Where is ordering guaranteed?</p>
+<p><strong>Answer:</strong> Within a single partition only</p>
+<p>Key by entity.</p>
+<p><strong>Q12.</strong> With 6 partitions and a consumer group of 8 consumers, how many consumers are idle?</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="nb">print</span><span class="p">(</span><span class="nb">max</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="mi">8</span><span class="o">-</span><span class="mi">6</span><span class="p">))</span>
+</code></pre></div>
+<p><strong>Answer:</strong> 2</p>
+<p>Parallelism is bounded by partitions. Verified by running it.</p>
+<h3 id="04-producers-keys-partitioning-batching"><a href="../level-1/04-producers-keys-batching/">04 · Producers: Keys, Partitioning &amp; Batching</a><a class="headerlink" href="#04-producers-keys-partitioning-batching" title="Permanent link">&para;</a></h3>
+<p><strong>Q13.</strong> Which partition does a key map to with hash % 4 (simple model)? Keys 'a','b','c' with ord sums 97,98,99.</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="nb">print</span><span class="p">([</span><span class="n">k</span><span class="o">%</span><span class="mi">4</span> <span class="k">for</span> <span class="n">k</span> <span class="ow">in</span> <span class="p">(</span><span class="mi">97</span><span class="p">,</span><span class="mi">98</span><span class="p">,</span><span class="mi">99</span><span class="p">)])</span>
+</code></pre></div>
+<p><strong>Answer:</strong> [1, 2, 3]</p>
+<p>Same key, same partition. Verified by running it.</p>
+<p><strong>Q14.</strong> Why set a record key?</p>
+<p><strong>Answer:</strong> To keep related events ordered in the same partition</p>
+<p>Keyed partitioning.</p>
+<p><strong>Q15.</strong> What do linger.ms and batch.size trade?</p>
+<p><strong>Answer:</strong> Latency versus throughput via batching</p>
+<p>Bigger batches, higher throughput.</p>
+<p><strong>Q16.</strong> What does compression do for producers?</p>
+<p><strong>Answer:</strong> Shrinks batches to save network and disk</p>
+<p>lz4/zstd.</p>
+<h3 id="05-consumers-consumer-groups"><a href="../level-1/05-consumers-consumer-groups/">05 · Consumers &amp; Consumer Groups</a><a class="headerlink" href="#05-consumers-consumer-groups" title="Permanent link">&para;</a></h3>
+<p><strong>Q17.</strong> What is a consumer group?</p>
+<p><strong>Answer:</strong> Consumers sharing a topic's partitions, each partition read by one member</p>
+<p>Scale-out.</p>
+<p><strong>Q18.</strong> What does committing an offset record?</p>
+<p><strong>Answer:</strong> The consumer's progress so it can resume</p>
+<p>__consumer_offsets.</p>
+<p><strong>Q19.</strong> What if two groups subscribe to one topic?</p>
+<p><strong>Answer:</strong> Each gets every message independently</p>
+<p>Fan-out.</p>
+<p><strong>Q20.</strong> What happens with more consumers than partitions?</p>
+<p><strong>Answer:</strong> Extra consumers sit idle</p>
+<p>Plan partitions.</p>
+<h3 id="06-the-new-consumer-rebalance-protocol-kip-848-vs-classic"><a href="../level-1/06-rebalance-protocols/">06 · The New Consumer Rebalance Protocol (KIP-848) vs Classic</a><a class="headerlink" href="#06-the-new-consumer-rebalance-protocol-kip-848-vs-classic" title="Permanent link">&para;</a></h3>
+<p><strong>Q21.</strong> What triggers a rebalance?</p>
+<p><strong>Answer:</strong> Members joining/leaving or partition changes</p>
+<p>Pauses consumption.</p>
+<p><strong>Q22.</strong> What does cooperative rebalancing improve?</p>
+<p><strong>Answer:</strong> Only moved partitions pause instead of stop-the-world</p>
+<p>Incremental.</p>
+<p><strong>Q23.</strong> What does static membership (group.instance.id) reduce?</p>
+<p><strong>Answer:</strong> Rebalances on short restarts</p>
+<p>Sticky identity.</p>
+<p><strong>Q24.</strong> What does session.timeout.ms control?</p>
+<p><strong>Answer:</strong> How long before a silent member is considered dead</p>
+<p>Heartbeats.</p>
+<h3 id="07-replication-leaders-followers-the-isr"><a href="../level-1/07-replication-isr/">07 · Replication: Leaders, Followers &amp; the ISR</a><a class="headerlink" href="#07-replication-leaders-followers-the-isr" title="Permanent link">&para;</a></h3>
+<p><strong>Q25.</strong> What is the ISR?</p>
+<p><strong>Answer:</strong> In-sync replicas that are caught up with the leader</p>
+<p>Candidates for leader.</p>
+<p><strong>Q26.</strong> What does replication factor 3 give?</p>
+<p><strong>Answer:</strong> Two additional copies, tolerating broker failures</p>
+<p>Durability.</p>
+<p><strong>Q27.</strong> What does min.insync.replicas=2 with acks=all guarantee?</p>
+<p><strong>Answer:</strong> A write succeeds only when at least 2 replicas have it</p>
+<p>Fail instead of losing data.</p>
+<p><strong>Q28.</strong> What happens to a lagging follower?</p>
+<p><strong>Answer:</strong> It leaves the ISR until it catches up</p>
+<p>replica.lag.time.max.</p>
+<h3 id="08-delivery-semantics-at-most-once-at-least-once-idempotence"><a href="../level-1/08-delivery-semantics/">08 · Delivery Semantics: At-Most-Once, At-Least-Once &amp; Idempotence</a><a class="headerlink" href="#08-delivery-semantics-at-most-once-at-least-once-idempotence" title="Permanent link">&para;</a></h3>
+<p><strong>Q29.</strong> What does acks=all mean?</p>
+<p><strong>Answer:</strong> The leader waits for all in-sync replicas</p>
+<p>Strongest durability.</p>
+<p><strong>Q30.</strong> What do at-least-once semantics risk?</p>
+<p><strong>Answer:</strong> Duplicates after retries</p>
+<p>Idempotent consumers.</p>
+<p><strong>Q31.</strong> What does an idempotent producer prevent?</p>
+<p><strong>Answer:</strong> Duplicates from retries within a partition</p>
+<p>enable.idempotence.</p>
+<p><strong>Q32.</strong> What's at-most-once?</p>
+<p><strong>Answer:</strong> No retries and no duplicates, but data may be lost</p>
+<p>Rarely wanted.</p>
+<h3 id="09-retention-compaction"><a href="../level-1/09-retention-compaction/">09 · Retention &amp; Compaction</a><a class="headerlink" href="#09-retention-compaction" title="Permanent link">&para;</a></h3>
+<p><strong>Q33.</strong> What does retention.ms control?</p>
+<p><strong>Answer:</strong> How long data is kept before deletion</p>
+<p>Time-based.</p>
+<p><strong>Q34.</strong> What does log compaction keep?</p>
+<p><strong>Answer:</strong> The latest value per key</p>
+<p>Changelogs.</p>
+<p><strong>Q35.</strong> How is a key deleted in a compacted topic?</p>
+<p><strong>Answer:</strong> Write a tombstone (null value)</p>
+<p>Later cleaned.</p>
+<p><strong>Q36.</strong> When use compaction instead of deletion?</p>
+<p><strong>Answer:</strong> State/changelog topics where only the latest value matters</p>
+<p>Different goals.</p>
+<h3 id="10-project-a-producerconsumer-pipeline-with-partition-keys"><a href="../level-1/10-project-producer-consumer-pipeline/">10 · Project: A Producer/Consumer Pipeline with Partition Keys</a><a class="headerlink" href="#10-project-a-producerconsumer-pipeline-with-partition-keys" title="Permanent link">&para;</a></h3>
+<p><strong>Q37.</strong> What does the pipeline project combine?</p>
+<p><strong>Answer:</strong> A producer, topic and consumer group with offsets and delivery settings</p>
+<p>Level 1 project.</p>
+<p><strong>Q38.</strong> How verify no loss?</p>
+<p><strong>Answer:</strong> Compare produced and consumed counts end to end</p>
+<p>Reconcile.</p>
+<p><strong>Q39.</strong> What do you handle on consumer failure?</p>
+<p><strong>Answer:</strong> Restart from committed offsets, with idempotent processing</p>
+<p>At-least-once.</p>
+<p><strong>Q40.</strong> Why commit after processing?</p>
+<p><strong>Answer:</strong> To avoid losing messages on crash (at-least-once)</p>
+<p>Order matters.</p>
+<h2 id="level-2-operating-a-cluster">Level 2 · Operating a Cluster<a class="headerlink" href="#level-2-operating-a-cluster" title="Permanent link">&para;</a></h2>
+<h3 id="01-multi-broker-clusters-the-kraft-quorum-in-practice"><a href="../level-2/01-multi-broker-kraft-quorum/">01 · Multi-Broker Clusters &amp; the KRaft Quorum in Practice</a><a class="headerlink" href="#01-multi-broker-clusters-the-kraft-quorum-in-practice" title="Permanent link">&para;</a></h3>
+<p><strong>Q41.</strong> How many brokers tolerate one failure with replication factor 3?</p>
+<p><strong>Answer:</strong> At least 3</p>
+<p>Replicas on different brokers.</p>
+<p><strong>Q42.</strong> What is a KRaft quorum?</p>
+<p><strong>Answer:</strong> Controllers electing a leader and replicating metadata</p>
+<p>Raft.</p>
+<p><strong>Q43.</strong> Why odd numbers of controllers?</p>
+<p><strong>Answer:</strong> Majorities are well-defined and cheaper</p>
+<p>3 or 5.</p>
+<p><strong>Q44.</strong> What does the active controller do?</p>
+<p><strong>Answer:</strong> Manages partition leadership and metadata changes</p>
+<p>Cluster brain.</p>
+<h3 id="02-producer-configuration-that-actually-matters"><a href="../level-2/02-producer-configuration/">02 · Producer Configuration That Actually Matters</a><a class="headerlink" href="#02-producer-configuration-that-actually-matters" title="Permanent link">&para;</a></h3>
+<p><strong>Q45.</strong> What does enable.idempotence do?</p>
+<p><strong>Answer:</strong> Deduplicates producer retries via sequence numbers</p>
+<p>Safe retries.</p>
+<p><strong>Q46.</strong> Which setting bounds total send time?</p>
+<p><strong>Answer:</strong> delivery.timeout.ms</p>
+<p>Includes retries.</p>
+<p><strong>Q47.</strong> What does max.in.flight.requests matter for?</p>
+<p><strong>Answer:</strong> Ordering when retries occur (idempotence allows up to 5)</p>
+<p>Order safety.</p>
+<p><strong>Q48.</strong> What does buffer.memory limit?</p>
+<p><strong>Answer:</strong> Unsent records buffered in the producer</p>
+<p>Blocks when full.</p>
+<h3 id="03-consumer-configuration-fetch-tuning"><a href="../level-2/03-consumer-configuration/">03 · Consumer Configuration &amp; Fetch Tuning</a><a class="headerlink" href="#03-consumer-configuration-fetch-tuning" title="Permanent link">&para;</a></h3>
+<p><strong>Q49.</strong> What does auto.offset.reset=earliest do?</p>
+<p><strong>Answer:</strong> Start from the beginning when no committed offset exists</p>
+<p>New groups.</p>
+<p><strong>Q50.</strong> What does max.poll.interval.ms guard?</p>
+<p><strong>Answer:</strong> Time between polls before the consumer is considered stuck</p>
+<p>Slow processing.</p>
+<p><strong>Q51.</strong> What does fetch.min.bytes trade?</p>
+<p><strong>Answer:</strong> Throughput versus latency</p>
+<p>Broker waits for data.</p>
+<p><strong>Q52.</strong> Why disable auto-commit in critical apps?</p>
+<p><strong>Answer:</strong> Commit only after processing to control delivery semantics</p>
+<p>Manual commits.</p>
+<h3 id="04-exactly-once-semantics-idempotence-transactions"><a href="../level-2/04-exactly-once-transactions/">04 · Exactly-Once Semantics: Idempotence &amp; Transactions</a><a class="headerlink" href="#04-exactly-once-semantics-idempotence-transactions" title="Permanent link">&para;</a></h3>
+<p><strong>Q53.</strong> What do transactions enable?</p>
+<p><strong>Answer:</strong> Atomic writes across partitions plus offset commits (exactly-once in Kafka pipelines)</p>
+<p>transactional.id.</p>
+<p><strong>Q54.</strong> What must consumers set to see only committed data?</p>
+<p><strong>Answer:</strong> isolation.level=read_committed</p>
+<p>Skip aborted.</p>
+<p><strong>Q55.</strong> What does exactly-once cover?</p>
+<p><strong>Answer:</strong> Kafka-to-Kafka read-process-write, not external side effects</p>
+<p>Idempotent sinks.</p>
+<p><strong>Q56.</strong> What is a zombie producer fenced by?</p>
+<p><strong>Answer:</strong> The transactional.id epoch</p>
+<p>Fencing.</p>
+<h3 id="05-monitoring-the-metrics-that-actually-matter"><a href="../level-2/05-monitoring-metrics/">05 · Monitoring: The Metrics That Actually Matter</a><a class="headerlink" href="#05-monitoring-the-metrics-that-actually-matter" title="Permanent link">&para;</a></h3>
+<p><strong>Q57.</strong> What's the key consumer health metric?</p>
+<p><strong>Answer:</strong> Consumer lag (end offset minus committed offset)</p>
+<p>Growing lag means falling behind.</p>
+<p><strong>Q58.</strong> What does UnderReplicatedPartitions indicate?</p>
+<p><strong>Answer:</strong> Followers not keeping up with leaders</p>
+<p>Alert.</p>
+<p><strong>Q59.</strong> Which metric signals broker request saturation?</p>
+<p><strong>Answer:</strong> Request handler idle ratio dropping</p>
+<p>Capacity.</p>
+<p><strong>Q60.</strong> What should alerts target?</p>
+<p><strong>Answer:</strong> Symptoms like lag growth and ISR shrinks</p>
+<p>Actionable.</p>
+<h3 id="06-log-segments-indexes-cleanup-in-practice"><a href="../level-2/06-segments-indexes-cleanup/">06 · Log Segments, Indexes &amp; Cleanup in Practice</a><a class="headerlink" href="#06-log-segments-indexes-cleanup-in-practice" title="Permanent link">&para;</a></h3>
+<p><strong>Q61.</strong> What is a log segment?</p>
+<p><strong>Answer:</strong> A file chunk of a partition log; old segments are deleted or compacted</p>
+<p>segment.bytes.</p>
+<p><strong>Q62.</strong> What do index files do?</p>
+<p><strong>Answer:</strong> Map offsets/timestamps to file positions for fast lookup</p>
+<p>.index/.timeindex.</p>
+<p><strong>Q63.</strong> Why does a small segment.bytes cost?</p>
+<p><strong>Answer:</strong> Many files and slower retention granularity</p>
+<p>Balance.</p>
+<p><strong>Q64.</strong> When is data eligible for deletion?</p>
+<p><strong>Answer:</strong> When whole segments exceed retention</p>
+<p>Segment granularity.</p>
+<h3 id="07-security-sasl-ssl-acls"><a href="../level-2/07-security-sasl-ssl-acls/">07 · Security: SASL, SSL &amp; ACLs</a><a class="headerlink" href="#07-security-sasl-ssl-acls" title="Permanent link">&para;</a></h3>
+<p><strong>Q65.</strong> What does TLS (SSL) protect?</p>
+<p><strong>Answer:</strong> Data in transit between clients and brokers</p>
+<p>Encryption + auth.</p>
+<p><strong>Q66.</strong> What does SASL provide?</p>
+<p><strong>Answer:</strong> Authentication mechanisms (SCRAM, OAUTHBEARER, GSSAPI)</p>
+<p>Who you are.</p>
+<p><strong>Q67.</strong> What do ACLs control?</p>
+<p><strong>Answer:</strong> Which principals can read/write which resources</p>
+<p>Authorization.</p>
+<p><strong>Q68.</strong> What's least privilege here?</p>
+<p><strong>Answer:</strong> Grant produce/consume on only the needed topics and groups</p>
+<p>Scoped ACLs.</p>
+<h3 id="08-partition-reassignment-scaling-a-cluster"><a href="../level-2/08-reassignment-scaling/">08 · Partition Reassignment &amp; Scaling a Cluster</a><a class="headerlink" href="#08-partition-reassignment-scaling-a-cluster" title="Permanent link">&para;</a></h3>
+<p><strong>Q69.</strong> What does partition reassignment do?</p>
+<p><strong>Answer:</strong> Moves replicas between brokers, e.g. after adding brokers</p>
+<p>kafka-reassign-partitions.</p>
+<p><strong>Q70.</strong> Why throttle reassignments?</p>
+<p><strong>Answer:</strong> To protect production traffic from replication load</p>
+<p>Bandwidth limits.</p>
+<p><strong>Q71.</strong> Can you reduce a topic's partition count?</p>
+<p><strong>Answer:</strong> No: only increase (which changes key mapping)</p>
+<p>Plan upfront.</p>
+<p><strong>Q72.</strong> What happens to key ordering when adding partitions?</p>
+<p><strong>Answer:</strong> Key-to-partition mapping changes for new messages</p>
+<p>Careful.</p>
+<h3 id="09-quotas-multi-tenancy"><a href="../level-2/09-quotas-multi-tenancy/">09 · Quotas &amp; Multi-Tenancy</a><a class="headerlink" href="#09-quotas-multi-tenancy" title="Permanent link">&para;</a></h3>
+<p><strong>Q73.</strong> What do quotas protect?</p>
+<p><strong>Answer:</strong> The cluster from a noisy client or tenant</p>
+<p>Produce/fetch/request quotas.</p>
+<p><strong>Q74.</strong> How are quotas identified?</p>
+<p><strong>Answer:</strong> By user and/or client.id</p>
+<p>Per principal.</p>
+<p><strong>Q75.</strong> What happens when a client exceeds its quota?</p>
+<p><strong>Answer:</strong> The broker throttles it (delays responses)</p>
+<p>Backoff.</p>
+<p><strong>Q76.</strong> What multi-tenancy practice helps?</p>
+<p><strong>Answer:</strong> Topic naming conventions, ACLs and quotas per team</p>
+<p>Isolation.</p>
+<h3 id="10-project-diagnose-a-consumer-lag-problem"><a href="../level-2/10-project-consumer-lag/">10 · Project: Diagnose a Consumer Lag Problem</a><a class="headerlink" href="#10-project-diagnose-a-consumer-lag-problem" title="Permanent link">&para;</a></h3>
+<p><strong>Q77.</strong> Lag is the difference between end offset and committed offset. Partitions end at [120, 90, 50] and committed [100, 90, 10]. Total lag?</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a><span class="nb">print</span><span class="p">(</span><span class="nb">sum</span><span class="p">(</span><span class="n">e</span><span class="o">-</span><span class="n">c</span> <span class="k">for</span> <span class="n">e</span><span class="p">,</span><span class="n">c</span> <span class="ow">in</span> <span class="nb">zip</span><span class="p">([</span><span class="mi">120</span><span class="p">,</span><span class="mi">90</span><span class="p">,</span><span class="mi">50</span><span class="p">],[</span><span class="mi">100</span><span class="p">,</span><span class="mi">90</span><span class="p">,</span><span class="mi">10</span><span class="p">])))</span>
+</code></pre></div>
+<p><strong>Answer:</strong> 60</p>
+<p>Sum across partitions. Verified by running it.</p>
+<p><strong>Q78.</strong> Why track lag per partition?</p>
+<p><strong>Answer:</strong> One slow partition can hide behind a healthy average</p>
+<p>Skew.</p>
+<p><strong>Q79.</strong> What do you alert on?</p>
+<p><strong>Answer:</strong> Lag growing over time, not just a static number</p>
+<p>Trend.</p>
+<p><strong>Q80.</strong> What reduces lag?</p>
+<p><strong>Answer:</strong> More consumers (up to partitions), faster processing or batching</p>
+<p>Scale and tune.</p>
+<h2 id="level-3-kafka-connect-kafka-streams">Level 3 · Kafka Connect &amp; Kafka Streams<a class="headerlink" href="#level-3-kafka-connect-kafka-streams" title="Permanent link">&para;</a></h2>
+<h3 id="01-kafka-connect-architecture-source-sink-connectors"><a href="../level-3/01-connect-architecture/">01 · Kafka Connect Architecture: Source &amp; Sink Connectors</a><a class="headerlink" href="#01-kafka-connect-architecture-source-sink-connectors" title="Permanent link">&para;</a></h3>
+<p><strong>Q81.</strong> What is Kafka Connect?</p>
+<p><strong>Answer:</strong> A framework for moving data between Kafka and external systems with connectors</p>
+<p>No custom code.</p>
+<p><strong>Q82.</strong> What's a source vs sink connector?</p>
+<p><strong>Answer:</strong> Source ingests into Kafka; sink writes out of Kafka</p>
+<p>Directions.</p>
+<p><strong>Q83.</strong> What does a converter do?</p>
+<p><strong>Answer:</strong> Serializes/deserializes data (JSON, Avro, Protobuf)</p>
+<p>Format.</p>
+<p><strong>Q84.</strong> What are SMTs?</p>
+<p><strong>Answer:</strong> Single Message Transforms applied per record</p>
+<p>Light changes.</p>
+<h3 id="02-running-connect-standalone"><a href="../level-3/02-connect-standalone/">02 · Running Connect Standalone</a><a class="headerlink" href="#02-running-connect-standalone" title="Permanent link">&para;</a></h3>
+<p><strong>Q85.</strong> When use standalone Connect?</p>
+<p><strong>Answer:</strong> Development and simple single-process jobs</p>
+<p>Offsets in a file.</p>
+<p><strong>Q86.</strong> Where does standalone store offsets?</p>
+<p><strong>Answer:</strong> In a local file</p>
+<p>Not fault tolerant.</p>
+<p><strong>Q87.</strong> How configure a standalone connector?</p>
+<p><strong>Answer:</strong> Properties files passed at startup</p>
+<p>Simple.</p>
+<p><strong>Q88.</strong> What limits standalone?</p>
+<p><strong>Answer:</strong> Single point of failure and no scaling</p>
+<p>Use distributed.</p>
+<h3 id="03-running-connect-distributed-the-rest-api"><a href="../level-3/03-connect-distributed-rest/">03 · Running Connect Distributed &amp; the REST API</a><a class="headerlink" href="#03-running-connect-distributed-the-rest-api" title="Permanent link">&para;</a></h3>
+<p><strong>Q89.</strong> What does distributed Connect provide?</p>
+<p><strong>Answer:</strong> Scalable, fault-tolerant workers coordinating via Kafka topics</p>
+<p>Config/offset/status topics.</p>
+<p><strong>Q90.</strong> How manage connectors in distributed mode?</p>
+<p><strong>Answer:</strong> The REST API</p>
+<p>POST /connectors.</p>
+<p><strong>Q91.</strong> What are tasks?</p>
+<p><strong>Answer:</strong> Units of parallel work a connector spawns</p>
+<p>tasks.max.</p>
+<p><strong>Q92.</strong> What happens when a worker dies?</p>
+<p><strong>Answer:</strong> Tasks rebalance to remaining workers</p>
+<p>Resilience.</p>
+<h3 id="04-kafka-streams-fundamentals-kstream-vs-ktable"><a href="../level-3/04-streams-fundamentals/">04 · Kafka Streams Fundamentals: KStream vs KTable</a><a class="headerlink" href="#04-kafka-streams-fundamentals-kstream-vs-ktable" title="Permanent link">&para;</a></h3>
+<p><strong>Q93.</strong> What is Kafka Streams?</p>
+<p><strong>Answer:</strong> A client library for stateful stream processing in your app</p>
+<p>No separate cluster.</p>
+<p><strong>Q94.</strong> KStream vs KTable?</p>
+<p><strong>Answer:</strong> KStream is an event stream; KTable is the latest value per key</p>
+<p>Duality.</p>
+<p><strong>Q95.</strong> How does Streams scale?</p>
+<p><strong>Answer:</strong> Running more instances, each handling partitions (tasks)</p>
+<p>Same app id.</p>
+<p><strong>Q96.</strong> What defines parallelism limits?</p>
+<p><strong>Answer:</strong> Input topic partition count</p>
+<p>Tasks = partitions.</p>
+<h3 id="05-streams-stateful-operations-state-stores"><a href="../level-3/05-streams-state-stores/">05 · Streams Stateful Operations &amp; State Stores</a><a class="headerlink" href="#05-streams-stateful-operations-state-stores" title="Permanent link">&para;</a></h3>
+<p><strong>Q97.</strong> What is a state store?</p>
+<p><strong>Answer:</strong> Local (RocksDB) storage for aggregations and joins</p>
+<p>Backed by changelog.</p>
+<p><strong>Q98.</strong> What backs a state store for recovery?</p>
+<p><strong>Answer:</strong> A compacted changelog topic</p>
+<p>Rebuild.</p>
+<p><strong>Q99.</strong> What speeds failover of state?</p>
+<p><strong>Answer:</strong> Standby replicas</p>
+<p>num.standby.replicas.</p>
+<p><strong>Q100.</strong> Why is state local?</p>
+<p><strong>Answer:</strong> Fast access without network round trips</p>
+<p>Co-partitioning.</p>
+<h3 id="06-streams-joins-windowing"><a href="../level-3/06-streams-joins-windowing/">06 · Streams Joins &amp; Windowing</a><a class="headerlink" href="#06-streams-joins-windowing" title="Permanent link">&para;</a></h3>
+<p><strong>Q101.</strong> What must be true to join two streams/tables by key?</p>
+<p><strong>Answer:</strong> They are co-partitioned (same key and partition count)</p>
+<p>Repartition if not.</p>
+<p><strong>Q102.</strong> What do windows do?</p>
+<p><strong>Answer:</strong> Group events by time (tumbling, hopping, sliding, session)</p>
+<p>Time aggregates.</p>
+<p><strong>Q103.</strong> What is grace period for?</p>
+<p><strong>Answer:</strong> Accepting late events after a window closes</p>
+<p>Late data.</p>
+<p><strong>Q104.</strong> What is a GlobalKTable?</p>
+<p><strong>Answer:</strong> A fully replicated table on every instance for lookups</p>
+<p>Small reference data.</p>
+<h3 id="07-changelog-topics-fault-tolerance"><a href="../level-3/07-changelog-fault-tolerance/">07 · Changelog Topics &amp; Fault Tolerance</a><a class="headerlink" href="#07-changelog-topics-fault-tolerance" title="Permanent link">&para;</a></h3>
+<p><strong>Q105.</strong> How does Streams recover state after a crash?</p>
+<p><strong>Answer:</strong> Replays the changelog topic to rebuild the store</p>
+<p>Fault tolerance.</p>
+<p><strong>Q106.</strong> What does processing.guarantee=exactly_once_v2 provide?</p>
+<p><strong>Answer:</strong> Atomic consume-process-produce within Kafka</p>
+<p>Transactions.</p>
+<p><strong>Q107.</strong> What causes long recovery?</p>
+<p><strong>Answer:</strong> Large state restored from changelog (use standbys)</p>
+<p>Plan for it.</p>
+<p><strong>Q108.</strong> What compacts changelogs?</p>
+<p><strong>Answer:</strong> Log compaction keeps latest per key</p>
+<p>Bounded size.</p>
+<h3 id="08-schema-evolution-avroprotobuf-compatibility"><a href="../level-3/08-schema-evolution/">08 · Schema Evolution: Avro/Protobuf &amp; Compatibility</a><a class="headerlink" href="#08-schema-evolution-avroprotobuf-compatibility" title="Permanent link">&para;</a></h3>
+<p><strong>Q109.</strong> What does a schema registry provide?</p>
+<p><strong>Answer:</strong> Versioned schemas and compatibility checks for messages</p>
+<p>Contracts.</p>
+<p><strong>Q110.</strong> Which change is backward compatible in Avro?</p>
+<p><strong>Answer:</strong> Adding a field with a default</p>
+<p>Consumers keep working.</p>
+<p><strong>Q111.</strong> What does BACKWARD compatibility mean?</p>
+<p><strong>Answer:</strong> New schema can read data written with the old schema</p>
+<p>Upgrade consumers first.</p>
+<p><strong>Q112.</strong> Why not free-form JSON?</p>
+<p><strong>Answer:</strong> No enforced contract, so breaking changes slip through</p>
+<p>Use schemas.</p>
+<h3 id="09-error-handling-dead-letter-queues-retries"><a href="../level-3/09-error-handling-dlq/">09 · Error Handling: Dead Letter Queues &amp; Retries</a><a class="headerlink" href="#09-error-handling-dead-letter-queues-retries" title="Permanent link">&para;</a></h3>
+<p><strong>Q113.</strong> What is a dead letter queue/topic?</p>
+<p><strong>Answer:</strong> A topic for records that repeatedly fail processing</p>
+<p>Inspect later.</p>
+<p><strong>Q114.</strong> What should you store with a DLQ record?</p>
+<p><strong>Answer:</strong> Error details, source topic/partition/offset</p>
+<p>Debuggability.</p>
+<p><strong>Q115.</strong> What's a poison pill?</p>
+<p><strong>Answer:</strong> A record that always fails processing and blocks progress</p>
+<p>Isolate it.</p>
+<p><strong>Q116.</strong> How do Connect sinks handle errors?</p>
+<p><strong>Answer:</strong> errors.tolerance and deadletterqueue settings</p>
+<p>Configurable.</p>
+<h3 id="10-project-a-real-kafka-streams-application"><a href="../level-3/10-project-streams-application/">10 · Project: A Real Kafka Streams Application</a><a class="headerlink" href="#10-project-a-real-kafka-streams-application" title="Permanent link">&para;</a></h3>
+<p><strong>Q117.</strong> What does the Streams app project combine?</p>
+<p><strong>Answer:</strong> Topology, state, windows, joins and error handling</p>
+<p>Level 3 project.</p>
+<p><strong>Q118.</strong> How test a topology without a cluster?</p>
+<p><strong>Answer:</strong> TopologyTestDriver</p>
+<p>Fast tests.</p>
+<p><strong>Q119.</strong> How scale it?</p>
+<p><strong>Answer:</strong> Add instances up to the partition count</p>
+<p>Tasks.</p>
+<p><strong>Q120.</strong> How monitor it?</p>
+<p><strong>Answer:</strong> Lag, state restore time and process rate</p>
+<p>Metrics.</p>
+<h2 id="level-4-production-kafka-capstone">Level 4 · Production Kafka &amp; Capstone<a class="headerlink" href="#level-4-production-kafka-capstone" title="Permanent link">&para;</a></h2>
+<h3 id="01-performance-tuning-throughput-vs-latency"><a href="../level-4/01-performance-tuning/">01 · Performance Tuning: Throughput vs Latency</a><a class="headerlink" href="#01-performance-tuning-throughput-vs-latency" title="Permanent link">&para;</a></h3>
+<p><strong>Q121.</strong> What most affects producer throughput?</p>
+<p><strong>Answer:</strong> Batching (linger.ms/batch.size), compression and acks</p>
+<p>Tune together.</p>
+<p><strong>Q122.</strong> What affects consumer throughput?</p>
+<p><strong>Answer:</strong> fetch sizes, partitions and processing speed</p>
+<p>Parallelism.</p>
+<p><strong>Q123.</strong> What hardware matters most for brokers?</p>
+<p><strong>Answer:</strong> Disk throughput/page cache and network</p>
+<p>Sequential IO.</p>
+<p><strong>Q124.</strong> How tune safely?</p>
+<p><strong>Answer:</strong> Change one thing and measure with realistic load</p>
+<p>Evidence.</p>
+<h3 id="02-capacity-planning-partitions-replication-disk"><a href="../level-4/02-capacity-planning/">02 · Capacity Planning: Partitions, Replication &amp; Disk</a><a class="headerlink" href="#02-capacity-planning-partitions-replication-disk" title="Permanent link">&para;</a></h3>
+<p><strong>Q125.</strong> Ingest 50 MB/s with replication factor 3 and 7-day retention: roughly how many TB of disk across the cluster?</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a><span class="nb">print</span><span class="p">(</span><span class="nb">round</span><span class="p">(</span><span class="mf">50e6</span><span class="o">*</span><span class="mi">86400</span><span class="o">*</span><span class="mi">7</span><span class="o">*</span><span class="mi">3</span><span class="o">/</span><span class="mf">1e12</span><span class="p">,</span><span class="mi">1</span><span class="p">))</span>
+</code></pre></div>
+<p><strong>Answer:</strong> 90.7</p>
+<p>throughput x retention x replication. Verified by running it.</p>
+<p><strong>Q126.</strong> What drives partition count?</p>
+<p><strong>Answer:</strong> Target throughput and consumer parallelism</p>
+<p>Plan upfront.</p>
+<p><strong>Q127.</strong> Why leave headroom?</p>
+<p><strong>Answer:</strong> Failures and rebalances shift load onto remaining brokers</p>
+<p>N+1 capacity.</p>
+<p><strong>Q128.</strong> What network cost multiplies traffic?</p>
+<p><strong>Answer:</strong> Replication and fan-out to consumer groups</p>
+<p>Count both.</p>
+<h3 id="03-troubleshooting-under-replicated-partitions-isr-shrink"><a href="../level-4/03-troubleshooting-common-failures/">03 · Troubleshooting: Under-Replicated Partitions &amp; ISR Shrink</a><a class="headerlink" href="#03-troubleshooting-under-replicated-partitions-isr-shrink" title="Permanent link">&para;</a></h3>
+<p><strong>Q129.</strong> First step when consumers lag?</p>
+<p><strong>Answer:</strong> Check whether it's slow processing, a rebalance storm or broker issues</p>
+<p>Diagnose.</p>
+<p><strong>Q130.</strong> What does repeated rebalancing suggest?</p>
+<p><strong>Answer:</strong> Too-slow polls, unstable members or short timeouts</p>
+<p>Tune max.poll.</p>
+<p><strong>Q131.</strong> What does an offline partition imply?</p>
+<p><strong>Answer:</strong> No leader available: check ISR and broker health</p>
+<p>Unclean election risks.</p>
+<p><strong>Q132.</strong> What is unclean leader election?</p>
+<p><strong>Answer:</strong> Electing an out-of-sync replica, risking data loss</p>
+<p>Default off.</p>
+<h3 id="04-disaster-recovery-geo-replication-with-mirrormaker-2"><a href="../level-4/04-disaster-recovery-mirrormaker/">04 · Disaster Recovery &amp; Geo-Replication with MirrorMaker 2</a><a class="headerlink" href="#04-disaster-recovery-geo-replication-with-mirrormaker-2" title="Permanent link">&para;</a></h3>
+<p><strong>Q133.</strong> What is MirrorMaker 2 for?</p>
+<p><strong>Answer:</strong> Replicating topics and offsets across clusters (DR/migration)</p>
+<p>Cross-cluster.</p>
+<p><strong>Q134.</strong> What's active-passive DR?</p>
+<p><strong>Answer:</strong> One cluster serves traffic; the other is a replica ready to take over</p>
+<p>Simpler.</p>
+<p><strong>Q135.</strong> What must consumers handle on failover?</p>
+<p><strong>Answer:</strong> Translated offsets and possible duplicates</p>
+<p>Idempotent.</p>
+<p><strong>Q136.</strong> What defines acceptable DR?</p>
+<p><strong>Answer:</strong> RPO and RTO</p>
+<p>Business targets.</p>
+<h3 id="05-upgrades-compatibility-the-zookeeper-to-kraft-migration"><a href="../level-4/05-upgrades-kraft-migration/">05 · Upgrades, Compatibility &amp; the ZooKeeper-to-KRaft Migration</a><a class="headerlink" href="#05-upgrades-compatibility-the-zookeeper-to-kraft-migration" title="Permanent link">&para;</a></h3>
+<p><strong>Q137.</strong> How upgrade brokers safely?</p>
+<p><strong>Answer:</strong> Rolling restarts, one broker at a time, following compatibility notes</p>
+<p>Zero downtime.</p>
+<p><strong>Q138.</strong> What's the order for protocol/metadata versions?</p>
+<p><strong>Answer:</strong> Upgrade binaries first, then bump metadata/feature versions</p>
+<p>Rollback safety.</p>
+<p><strong>Q139.</strong> What does ZooKeeper-to-KRaft migration involve?</p>
+<p><strong>Answer:</strong> Dual-write migration mode with controllers before cutover</p>
+<p>Follow the procedure.</p>
+<p><strong>Q140.</strong> Why test upgrades?</p>
+<p><strong>Answer:</strong> In staging with production-like load</p>
+<p>Reduce risk.</p>
+<h3 id="06-kafka-vs-other-messaging-systems"><a href="../level-4/06-kafka-vs-other-systems/">06 · Kafka vs Other Messaging Systems</a><a class="headerlink" href="#06-kafka-vs-other-messaging-systems" title="Permanent link">&para;</a></h3>
+<p><strong>Q141.</strong> When choose Kafka over a simple queue?</p>
+<p><strong>Answer:</strong> High-throughput streaming, replay and many independent consumers</p>
+<p>Fit.</p>
+<p><strong>Q142.</strong> How does RabbitMQ differ?</p>
+<p><strong>Answer:</strong> Smart broker routing with message deletion on ack</p>
+<p>Different model.</p>
+<p><strong>Q143.</strong> What do managed streams (Kinesis, Pub/Sub) trade?</p>
+<p><strong>Answer:</strong> Less ops for less control and portability</p>
+<p>Choose by needs.</p>
+<p><strong>Q144.</strong> When is a database enough?</p>
+<p><strong>Answer:</strong> Low volume, simple needs with transactions</p>
+<p>Don't over-engineer.</p>
+<h3 id="07-event-driven-patterns-event-sourcing-cqrs-the-outbox"><a href="../level-4/07-event-driven-patterns/">07 · Event-Driven Patterns: Event Sourcing, CQRS &amp; the Outbox</a><a class="headerlink" href="#07-event-driven-patterns-event-sourcing-cqrs-the-outbox" title="Permanent link">&para;</a></h3>
+<p><strong>Q145.</strong> What is event sourcing?</p>
+<p><strong>Answer:</strong> Storing state changes as an immutable event log</p>
+<p>Replay to rebuild.</p>
+<p><strong>Q146.</strong> What does CQRS separate?</p>
+<p><strong>Answer:</strong> Write and read models</p>
+<p>Projections.</p>
+<p><strong>Q147.</strong> What's the outbox pattern?</p>
+<p><strong>Answer:</strong> Writing events with DB changes in one transaction then publishing them</p>
+<p>Consistency.</p>
+<p><strong>Q148.</strong> What's a saga?</p>
+<p><strong>Answer:</strong> A sequence of local transactions with compensations</p>
+<p>Distributed workflows.</p>
+<h3 id="08-kafka-on-kubernetes-with-strimzi"><a href="../level-4/08-kafka-on-kubernetes/">08 · Kafka on Kubernetes with Strimzi</a><a class="headerlink" href="#08-kafka-on-kubernetes-with-strimzi" title="Permanent link">&para;</a></h3>
+<p><strong>Q149.</strong> What does Strimzi do?</p>
+<p><strong>Answer:</strong> Runs Kafka on Kubernetes via operators</p>
+<p>Declarative.</p>
+<p><strong>Q150.</strong> What storage suits brokers on K8s?</p>
+<p><strong>Answer:</strong> Persistent volumes with fast disks</p>
+<p>Durability.</p>
+<p><strong>Q151.</strong> What's key for K8s networking?</p>
+<p><strong>Answer:</strong> Stable broker addressing and advertised listeners</p>
+<p>Client access.</p>
+<p><strong>Q152.</strong> What do pod disruption budgets protect?</p>
+<p><strong>Answer:</strong> Availability during node maintenance</p>
+<p>Keep ISR.</p>
+<h3 id="09-cost-operational-tradeoffs-at-scale"><a href="../level-4/09-cost-operational-tradeoffs/">09 · Cost &amp; Operational Tradeoffs at Scale</a><a class="headerlink" href="#09-cost-operational-tradeoffs-at-scale" title="Permanent link">&para;</a></h3>
+<p><strong>Q153.</strong> What drives Kafka cost?</p>
+<p><strong>Answer:</strong> Storage, network egress, broker count and ops effort</p>
+<p>Retention and replication.</p>
+<p><strong>Q154.</strong> How cut storage cost?</p>
+<p><strong>Answer:</strong> Shorter retention, compression and tiered storage</p>
+<p>Tier cold data.</p>
+<p><strong>Q155.</strong> What's tiered storage?</p>
+<p><strong>Answer:</strong> Offloading old segments to object storage</p>
+<p>Cheaper retention.</p>
+<p><strong>Q156.</strong> Managed vs self-managed trade-off?</p>
+<p><strong>Answer:</strong> Convenience and SLAs versus control and cost at scale</p>
+<p>Decide by team.</p>
+<h3 id="10-capstone-build-break-diagnose-a-small-event-driven-pipeline"><a href="../level-4/10-capstone-event-driven-pipeline/">10 · Capstone: Build, Break &amp; Diagnose a Small Event-Driven Pipeline</a><a class="headerlink" href="#10-capstone-build-break-diagnose-a-small-event-driven-pipeline" title="Permanent link">&para;</a></h3>
+<p><strong>Q157.</strong> What does the capstone combine?</p>
+<p><strong>Answer:</strong> Producers, Connect, Streams, schemas, monitoring and DR in one pipeline</p>
+<p>Event-driven pipeline.</p>
+<p><strong>Q158.</strong> How prove readiness?</p>
+<p><strong>Answer:</strong> Failure drills, load tests, lag alerts and runbooks</p>
+<p>Operate.</p>
+<p><strong>Q159.</strong> What documentation matters?</p>
+<p><strong>Answer:</strong> Topic catalog, schemas, ownership and runbooks</p>
+<p>Governance.</p>
+<p><strong>Q160.</strong> What sustains the platform?</p>
+<p><strong>Answer:</strong> Ownership, standards and capacity reviews</p>
+<p>Lifecycle.</p>
+<h2 id="mixed-questions-across-all-levels">Mixed questions across all levels<a class="headerlink" href="#mixed-questions-across-all-levels" title="Permanent link">&para;</a></h2>
+<p><strong>Q161.</strong> Why does Kafka guarantee ordering only within a partition?</p>
+<p><strong>Answer:</strong> Each partition is an independent append-only log; there is no global order across partitions</p>
+<p>Use a key to keep related events together.</p>
+<p><strong>Q162.</strong> Which consumers are idle when 5 consumers share a 3-partition topic?</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a><span class="nb">print</span><span class="p">(</span><span class="mi">5</span><span class="o">-</span><span class="mi">3</span><span class="p">)</span>
+</code></pre></div>
+<p><strong>Answer:</strong> 2</p>
+<p>Parallelism is bounded by partitions. Verified by running it.</p>
+<p><strong>Q163.</strong> Partition ends are [30, 10, 5] and committed offsets are [25, 10, 0]. Total lag?</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a><span class="nb">print</span><span class="p">(</span><span class="nb">sum</span><span class="p">(</span><span class="n">e</span><span class="o">-</span><span class="n">c</span> <span class="k">for</span> <span class="n">e</span><span class="p">,</span><span class="n">c</span> <span class="ow">in</span> <span class="nb">zip</span><span class="p">([</span><span class="mi">30</span><span class="p">,</span><span class="mi">10</span><span class="p">,</span><span class="mi">5</span><span class="p">],[</span><span class="mi">25</span><span class="p">,</span><span class="mi">10</span><span class="p">,</span><span class="mi">0</span><span class="p">])))</span>
+</code></pre></div>
+<p><strong>Answer:</strong> 10</p>
+<p>Lag = end offset minus committed offset. Verified by running it.</p>
+<p><strong>Q164.</strong> A producer retries after a lost ack and duplicates appear. What fixes it?</p>
+<p><strong>Answer:</strong> enable.idempotence=true (sequence numbers dedupe within a partition)</p>
+<p>Safe retries.</p>
+<p><strong>Q165.</strong> How do you avoid data loss when a broker dies?</p>
+<p><strong>Answer:</strong> Replication factor 3, acks=all and min.insync.replicas=2</p>
+<p>Durability settings.</p>
+<p><strong>Q166.</strong> Consumers commit offsets before processing and lose messages on a crash. What's the fix?</p>
+<p><strong>Answer:</strong> Commit after processing (at-least-once) and make handlers idempotent</p>
+<p>Order of commit matters.</p>
+<p><strong>Q167.</strong> A consumer is repeatedly removed from its group. What do you check?</p>
+<p><strong>Answer:</strong> Poll interval/processing time (max.poll.interval.ms), session timeout and heartbeats</p>
+<p>Rebalance storms.</p>
+<p><strong>Q168.</strong> Which topic setting keeps only the latest value per key?</p>
+<p><strong>Answer:</strong> cleanup.policy=compact</p>
+<p>Changelogs and tables.</p>
+<p><strong>Q169.</strong> How do you delete a key from a compacted topic?</p>
+<p><strong>Answer:</strong> Produce a tombstone (null value)</p>
+<p>Compaction removes it later.</p>
+<p><strong>Q170.</strong> An exactly-once pipeline writes to an external database. Does Kafka transactions cover it?</p>
+<p><strong>Answer:</strong> No: use an idempotent or transactional sink; Kafka's exactly-once covers Kafka-to-Kafka</p>
+<p>Idempotent consumers.</p>
+<p><strong>Q171.</strong> What must consumers set to skip aborted transactional records?</p>
+<p><strong>Answer:</strong> isolation.level=read_committed</p>
+<p>Transaction visibility.</p>
+<p><strong>Q172.</strong> Two streams must be joined by key but fail with an error. What's usually required?</p>
+<p><strong>Answer:</strong> Co-partitioning: same keys and the same partition count (repartition if needed)</p>
+<p>Join prerequisite.</p>
+<p><strong>Q173.</strong> A Kafka Streams instance restarts and takes ages to serve. What reduces this?</p>
+<p><strong>Answer:</strong> Standby replicas and smaller state; state is rebuilt from the changelog</p>
+<p>Fast failover.</p>
+<p><strong>Q174.</strong> A schema change breaks consumers. What prevents it?</p>
+<p><strong>Answer:</strong> A schema registry with compatibility checks (e.g. adding fields with defaults)</p>
+<p>Contracts.</p>
+<p><strong>Q175.</strong> A poison message blocks a consumer. What's the pattern?</p>
+<p><strong>Answer:</strong> Retry a bounded number of times, then send to a dead-letter topic with error context</p>
+<p>Keep the stream moving.</p>
+<p><strong>Q176.</strong> You need cross-region disaster recovery. Which tool?</p>
+<p><strong>Answer:</strong> MirrorMaker 2 (replicating topics and translating offsets)</p>
+<p>Plan RPO/RTO.</p>
+<p><strong>Q177.</strong> Roughly how many TB of disk for 20 MB/s, RF 3, 3-day retention?</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-6-1" name="__codelineno-6-1" href="#__codelineno-6-1"></a><span class="nb">print</span><span class="p">(</span><span class="nb">round</span><span class="p">(</span><span class="mf">20e6</span><span class="o">*</span><span class="mi">86400</span><span class="o">*</span><span class="mi">3</span><span class="o">*</span><span class="mi">3</span><span class="o">/</span><span class="mf">1e12</span><span class="p">,</span><span class="mi">1</span><span class="p">))</span>
+</code></pre></div>
+<p><strong>Answer:</strong> 15.6</p>
+<p>throughput x time x replication. Verified by running it.</p>
+<p><strong>Q178.</strong> Producers overload the cluster for other teams. What's the control?</p>
+<p><strong>Answer:</strong> Per-client/user quotas (produce/fetch/request)</p>
+<p>Multi-tenancy.</p>
+<p><strong>Q179.</strong> What's the safe way to upgrade brokers?</p>
+<p><strong>Answer:</strong> Rolling restarts one at a time, upgrade binaries before bumping metadata/protocol versions</p>
+<p>Zero downtime.</p>
+<h2 id="practical-coding-questions">Practical coding questions<a class="headerlink" href="#practical-coding-questions" title="Permanent link">&para;</a></h2>
+<h3 id="partitions-consumer-groups-and-lag">Partitions, consumer groups and lag<a class="headerlink" href="#partitions-consumer-groups-and-lag" title="Permanent link">&para;</a></h3>
+<p>Model a topic with key-based partitioning and a consumer group: assignment() gives each partition to exactly one member (round-robin), poll() reads from the committed offset, commit() advances offsets and lag() reports end minus committed per partition. Check the rebalance with more members than partitions.</p>
+<p>Starter code:</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-7-1" name="__codelineno-7-1" href="#__codelineno-7-1"></a>class Partition:
+<a id="__codelineno-7-2" name="__codelineno-7-2" href="#__codelineno-7-2"></a>    def __init__(self):
+<a id="__codelineno-7-3" name="__codelineno-7-3" href="#__codelineno-7-3"></a>        self.log = []                              # list of (key, value); offset = index
+<a id="__codelineno-7-4" name="__codelineno-7-4" href="#__codelineno-7-4"></a>
+<a id="__codelineno-7-5" name="__codelineno-7-5" href="#__codelineno-7-5"></a>class Topic:
+<a id="__codelineno-7-6" name="__codelineno-7-6" href="#__codelineno-7-6"></a>    def __init__(self, partitions):
+<a id="__codelineno-7-7" name="__codelineno-7-7" href="#__codelineno-7-7"></a>        self.parts = [Partition() for _ in range(partitions)]
+<a id="__codelineno-7-8" name="__codelineno-7-8" href="#__codelineno-7-8"></a>
+<a id="__codelineno-7-9" name="__codelineno-7-9" href="#__codelineno-7-9"></a>    def produce(self, key, value):
+<a id="__codelineno-7-10" name="__codelineno-7-10" href="#__codelineno-7-10"></a>        p = sum(key.encode()) % len(self.parts)    # stable key -&gt; partition (toy hash)
+<a id="__codelineno-7-11" name="__codelineno-7-11" href="#__codelineno-7-11"></a>        self.parts[p].log.append((key, value))
+<a id="__codelineno-7-12" name="__codelineno-7-12" href="#__codelineno-7-12"></a>        return p, len(self.parts[p].log) - 1
+<a id="__codelineno-7-13" name="__codelineno-7-13" href="#__codelineno-7-13"></a>
+<a id="__codelineno-7-14" name="__codelineno-7-14" href="#__codelineno-7-14"></a>class Group:
+<a id="__codelineno-7-15" name="__codelineno-7-15" href="#__codelineno-7-15"></a>    """A consumer group: each partition is owned by exactly one member; offsets are committed per partition."""
+<a id="__codelineno-7-16" name="__codelineno-7-16" href="#__codelineno-7-16"></a>    def __init__(self, topic):
+<a id="__codelineno-7-17" name="__codelineno-7-17" href="#__codelineno-7-17"></a>        self.topic = topic
+<a id="__codelineno-7-18" name="__codelineno-7-18" href="#__codelineno-7-18"></a>        self.members = []
+<a id="__codelineno-7-19" name="__codelineno-7-19" href="#__codelineno-7-19"></a>        self.committed = {i: 0 for i in range(len(topic.parts))}
+<a id="__codelineno-7-20" name="__codelineno-7-20" href="#__codelineno-7-20"></a>
+<a id="__codelineno-7-21" name="__codelineno-7-21" href="#__codelineno-7-21"></a>    def assignment(self):
+<a id="__codelineno-7-22" name="__codelineno-7-22" href="#__codelineno-7-22"></a>        # {member: [partition ids]} - each partition owned by exactly one member (round-robin by partition id)
+<a id="__codelineno-7-23" name="__codelineno-7-23" href="#__codelineno-7-23"></a>        return {}
+<a id="__codelineno-7-24" name="__codelineno-7-24" href="#__codelineno-7-24"></a>
+<a id="__codelineno-7-25" name="__codelineno-7-25" href="#__codelineno-7-25"></a>    def poll(self, member, max_records=10):
+<a id="__codelineno-7-26" name="__codelineno-7-26" href="#__codelineno-7-26"></a>        # records for the member's partitions starting at the committed offset: [(partition, offset, (key, value))]
+<a id="__codelineno-7-27" name="__codelineno-7-27" href="#__codelineno-7-27"></a>        return []
+<a id="__codelineno-7-28" name="__codelineno-7-28" href="#__codelineno-7-28"></a>
+<a id="__codelineno-7-29" name="__codelineno-7-29" href="#__codelineno-7-29"></a>    def commit(self, records):
+<a id="__codelineno-7-30" name="__codelineno-7-30" href="#__codelineno-7-30"></a>        # advance each partition's committed offset past the highest offset seen
+<a id="__codelineno-7-31" name="__codelineno-7-31" href="#__codelineno-7-31"></a>        pass
+<a id="__codelineno-7-32" name="__codelineno-7-32" href="#__codelineno-7-32"></a>
+<a id="__codelineno-7-33" name="__codelineno-7-33" href="#__codelineno-7-33"></a>    def lag(self):
+<a id="__codelineno-7-34" name="__codelineno-7-34" href="#__codelineno-7-34"></a>        # {partition: end offset - committed offset}
+<a id="__codelineno-7-35" name="__codelineno-7-35" href="#__codelineno-7-35"></a>        return {}
+<a id="__codelineno-7-36" name="__codelineno-7-36" href="#__codelineno-7-36"></a>
+<a id="__codelineno-7-37" name="__codelineno-7-37" href="#__codelineno-7-37"></a>t = Topic(3)
+<a id="__codelineno-7-38" name="__codelineno-7-38" href="#__codelineno-7-38"></a>for k in ["ada", "bo", "cy", "ada", "bo", "ada", "dee"]:
+<a id="__codelineno-7-39" name="__codelineno-7-39" href="#__codelineno-7-39"></a>    t.produce(k, "event-" + k)
+<a id="__codelineno-7-40" name="__codelineno-7-40" href="#__codelineno-7-40"></a>g = Group(t)
+<a id="__codelineno-7-41" name="__codelineno-7-41" href="#__codelineno-7-41"></a>g.members = ["c1", "c2"]
+<a id="__codelineno-7-42" name="__codelineno-7-42" href="#__codelineno-7-42"></a>print("assignment:", g.assignment())
+<a id="__codelineno-7-43" name="__codelineno-7-43" href="#__codelineno-7-43"></a>print("lag:", g.lag())
+<a id="__codelineno-7-44" name="__codelineno-7-44" href="#__codelineno-7-44"></a>r1 = g.poll("c1")
+<a id="__codelineno-7-45" name="__codelineno-7-45" href="#__codelineno-7-45"></a>print("c1 got:", [(i, o) for i, o, _ in r1])
+<a id="__codelineno-7-46" name="__codelineno-7-46" href="#__codelineno-7-46"></a>g.commit(r1)
+<a id="__codelineno-7-47" name="__codelineno-7-47" href="#__codelineno-7-47"></a>print("lag after c1 commit:", g.lag())
+<a id="__codelineno-7-48" name="__codelineno-7-48" href="#__codelineno-7-48"></a>g.members = ["c1", "c2", "c3", "c4"]                    # rebalance: more members than partitions
+<a id="__codelineno-7-49" name="__codelineno-7-49" href="#__codelineno-7-49"></a>print("assignment:", g.assignment())
+<a id="__codelineno-7-50" name="__codelineno-7-50" href="#__codelineno-7-50"></a>print("same key -&gt; same partition:", len({t.produce("ada", "x")[0] for _ in range(5)}) == 1)
+</code></pre></div>
+<p>Expected output:</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-8-1" name="__codelineno-8-1" href="#__codelineno-8-1"></a>assignment: {'c1': [0, 2], 'c2': [1]}
+<a id="__codelineno-8-2" name="__codelineno-8-2" href="#__codelineno-8-2"></a>lag: {0: 3, 1: 1, 2: 3}
+<a id="__codelineno-8-3" name="__codelineno-8-3" href="#__codelineno-8-3"></a>c1 got: [(0, 0), (0, 1), (0, 2), (2, 0), (2, 1), (2, 2)]
+<a id="__codelineno-8-4" name="__codelineno-8-4" href="#__codelineno-8-4"></a>lag after c1 commit: {0: 0, 1: 1, 2: 0}
+<a id="__codelineno-8-5" name="__codelineno-8-5" href="#__codelineno-8-5"></a>assignment: {'c1': [0], 'c2': [1], 'c3': [2], 'c4': []}
+<a id="__codelineno-8-6" name="__codelineno-8-6" href="#__codelineno-8-6"></a>same key -&gt; same partition: True
+</code></pre></div>
+<p>??? success "Show a solution"</p>
+<div class="highlight"><pre><span></span><code>```
+class Partition:
+    def __init__(self):
+        self.log = []                              # list of (key, value); offset = index
+
+class Topic:
+    def __init__(self, partitions):
+        self.parts = [Partition() for _ in range(partitions)]
+
+    def produce(self, key, value):
+        p = sum(key.encode()) % len(self.parts)    # stable key -&gt; partition (toy hash)
+        self.parts[p].log.append((key, value))
+        return p, len(self.parts[p].log) - 1
+
+class Group:
+    """A consumer group: each partition is owned by exactly one member; offsets are committed per partition."""
+    def __init__(self, topic):
+        self.topic = topic
+        self.members = []
+        self.committed = {i: 0 for i in range(len(topic.parts))}
+
+    def assignment(self):
+        out = {m: [] for m in self.members}
+        for i in range(len(self.topic.parts)):
+            out[self.members[i % len(self.members)]].append(i)       # round-robin
+        return out
+
+    def poll(self, member, max_records=10):
+        got = []
+        for i in self.assignment()[member]:
+            log = self.topic.parts[i].log
+            for off in range(self.committed[i], min(len(log), self.committed[i] + max_records)):
+                got.append((i, off, log[off]))
+        return got
+
+    def commit(self, records):
+        for i, off, _ in records:
+            self.committed[i] = max(self.committed[i], off + 1)
+
+    def lag(self):
+        return {i: len(self.topic.parts[i].log) - self.committed[i] for i in self.committed}
+
+t = Topic(3)
+for k in ["ada", "bo", "cy", "ada", "bo", "ada", "dee"]:
+    t.produce(k, "event-" + k)
+g = Group(t)
+g.members = ["c1", "c2"]
+print("assignment:", g.assignment())
+print("lag:", g.lag())
+r1 = g.poll("c1")
+print("c1 got:", [(i, o) for i, o, _ in r1])
+g.commit(r1)
+print("lag after c1 commit:", g.lag())
+g.members = ["c1", "c2", "c3", "c4"]                    # rebalance: more members than partitions
+print("assignment:", g.assignment())
+print("same key -&gt; same partition:", len({t.produce("ada", "x")[0] for _ in range(5)}) == 1)
+```
+
+Each partition is owned by one member of the group, offsets are committed per partition and lag is end offset minus committed offset; extra members get no partitions. This is a teaching model, not the Kafka client. Verified by running the solution.
+</code></pre></div>
+<h3 id="idempotent-producer-and-at-least-once-consumer">Idempotent producer and at-least-once consumer<a class="headerlink" href="#idempotent-producer-and-at-least-once-consumer" title="Permanent link">&para;</a></h3>
+<p>Complete Broker.append (dedupe by (producer, sequence) when enabled) and Consumer.run (process then commit; a crash before commit means the record is processed again). Compare plain retries with idempotence, and a naive consumer with an idempotent handler.</p>
+<p>Starter code:</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-10-1" name="__codelineno-10-1" href="#__codelineno-10-1"></a>class Producer:
+<a id="__codelineno-10-2" name="__codelineno-10-2" href="#__codelineno-10-2"></a>    """Idempotent producer model: retries after a lost ack must not create duplicates."""
+<a id="__codelineno-10-3" name="__codelineno-10-3" href="#__codelineno-10-3"></a>    def __init__(self, broker):
+<a id="__codelineno-10-4" name="__codelineno-10-4" href="#__codelineno-10-4"></a>        self.broker = broker
+<a id="__codelineno-10-5" name="__codelineno-10-5" href="#__codelineno-10-5"></a>        self.seq = 0
+<a id="__codelineno-10-6" name="__codelineno-10-6" href="#__codelineno-10-6"></a>
+<a id="__codelineno-10-7" name="__codelineno-10-7" href="#__codelineno-10-7"></a>    def send(self, value, fail_ack_times=0):
+<a id="__codelineno-10-8" name="__codelineno-10-8" href="#__codelineno-10-8"></a>        seq = self.seq
+<a id="__codelineno-10-9" name="__codelineno-10-9" href="#__codelineno-10-9"></a>        self.seq += 1
+<a id="__codelineno-10-10" name="__codelineno-10-10" href="#__codelineno-10-10"></a>        attempts = 0
+<a id="__codelineno-10-11" name="__codelineno-10-11" href="#__codelineno-10-11"></a>        while True:
+<a id="__codelineno-10-12" name="__codelineno-10-12" href="#__codelineno-10-12"></a>            attempts += 1
+<a id="__codelineno-10-13" name="__codelineno-10-13" href="#__codelineno-10-13"></a>            ack = self.broker.append(("p1", seq), value)
+<a id="__codelineno-10-14" name="__codelineno-10-14" href="#__codelineno-10-14"></a>            if attempts &gt; fail_ack_times:             # the first N acks are "lost" on the network
+<a id="__codelineno-10-15" name="__codelineno-10-15" href="#__codelineno-10-15"></a>                return attempts
+<a id="__codelineno-10-16" name="__codelineno-10-16" href="#__codelineno-10-16"></a>
+<a id="__codelineno-10-17" name="__codelineno-10-17" href="#__codelineno-10-17"></a>class Broker:
+<a id="__codelineno-10-18" name="__codelineno-10-18" href="#__codelineno-10-18"></a>    def __init__(self, dedupe):
+<a id="__codelineno-10-19" name="__codelineno-10-19" href="#__codelineno-10-19"></a>        self.log, self.seen, self.dedupe = [], set(), dedupe
+<a id="__codelineno-10-20" name="__codelineno-10-20" href="#__codelineno-10-20"></a>
+<a id="__codelineno-10-21" name="__codelineno-10-21" href="#__codelineno-10-21"></a>    def append(self, pid_seq, value):
+<a id="__codelineno-10-22" name="__codelineno-10-22" href="#__codelineno-10-22"></a>        # store value; when self.dedupe is on, a (producer, sequence) pair already seen must not be
+<a id="__codelineno-10-23" name="__codelineno-10-23" href="#__codelineno-10-23"></a>        # stored again but should still be acknowledged. Always return True.
+<a id="__codelineno-10-24" name="__codelineno-10-24" href="#__codelineno-10-24"></a>        return True
+<a id="__codelineno-10-25" name="__codelineno-10-25" href="#__codelineno-10-25"></a>
+<a id="__codelineno-10-26" name="__codelineno-10-26" href="#__codelineno-10-26"></a>class Consumer:
+<a id="__codelineno-10-27" name="__codelineno-10-27" href="#__codelineno-10-27"></a>    """At-least-once consumer: commits after processing; a crash before the commit means reprocessing."""
+<a id="__codelineno-10-28" name="__codelineno-10-28" href="#__codelineno-10-28"></a>    def __init__(self, log, handler):
+<a id="__codelineno-10-29" name="__codelineno-10-29" href="#__codelineno-10-29"></a>        self.log, self.handler, self.committed = log, handler, 0
+<a id="__codelineno-10-30" name="__codelineno-10-30" href="#__codelineno-10-30"></a>
+<a id="__codelineno-10-31" name="__codelineno-10-31" href="#__codelineno-10-31"></a>    def run(self, crash_after=None):
+<a id="__codelineno-10-32" name="__codelineno-10-32" href="#__codelineno-10-32"></a>        # process records from the committed offset, committing AFTER each is handled; when crash_after
+<a id="__codelineno-10-33" name="__codelineno-10-33" href="#__codelineno-10-33"></a>        # records have been handled in this call, return "crashed" before committing that last one;
+<a id="__codelineno-10-34" name="__codelineno-10-34" href="#__codelineno-10-34"></a>        # otherwise return "done" at the end of the log
+<a id="__codelineno-10-35" name="__codelineno-10-35" href="#__codelineno-10-35"></a>        return "done"
+<a id="__codelineno-10-36" name="__codelineno-10-36" href="#__codelineno-10-36"></a>
+<a id="__codelineno-10-37" name="__codelineno-10-37" href="#__codelineno-10-37"></a>for dedupe in (False, True):
+<a id="__codelineno-10-38" name="__codelineno-10-38" href="#__codelineno-10-38"></a>    b = Broker(dedupe); p = Producer(b)
+<a id="__codelineno-10-39" name="__codelineno-10-39" href="#__codelineno-10-39"></a>    p.send("a"); p.send("b", fail_ack_times=2); p.send("c")
+<a id="__codelineno-10-40" name="__codelineno-10-40" href="#__codelineno-10-40"></a>    print("idempotence" if dedupe else "plain retries", "-&gt;", b.log)
+<a id="__codelineno-10-41" name="__codelineno-10-41" href="#__codelineno-10-41"></a>
+<a id="__codelineno-10-42" name="__codelineno-10-42" href="#__codelineno-10-42"></a>b = Broker(True); p = Producer(b)
+<a id="__codelineno-10-43" name="__codelineno-10-43" href="#__codelineno-10-43"></a>for v in "abc": p.send(v)
+<a id="__codelineno-10-44" name="__codelineno-10-44" href="#__codelineno-10-44"></a>seen = []
+<a id="__codelineno-10-45" name="__codelineno-10-45" href="#__codelineno-10-45"></a>c = Consumer(b.log, seen.append)
+<a id="__codelineno-10-46" name="__codelineno-10-46" href="#__codelineno-10-46"></a>print(c.run(crash_after=2), seen, "committed", c.committed)
+<a id="__codelineno-10-47" name="__codelineno-10-47" href="#__codelineno-10-47"></a>print(c.run(), seen, "committed", c.committed)
+<a id="__codelineno-10-48" name="__codelineno-10-48" href="#__codelineno-10-48"></a>effects = {}
+<a id="__codelineno-10-49" name="__codelineno-10-49" href="#__codelineno-10-49"></a>def idempotent(v): effects[v] = effects.get(v, 0) + 1
+<a id="__codelineno-10-50" name="__codelineno-10-50" href="#__codelineno-10-50"></a>c2 = Consumer(b.log, lambda v: idempotent(v)); c2.run(crash_after=2); c2.run()
+<a id="__codelineno-10-51" name="__codelineno-10-51" href="#__codelineno-10-51"></a>print("side effects by key (naive):", effects)
+<a id="__codelineno-10-52" name="__codelineno-10-52" href="#__codelineno-10-52"></a>done = set(); applied = []
+<a id="__codelineno-10-53" name="__codelineno-10-53" href="#__codelineno-10-53"></a>def dedup_handler(v):
+<a id="__codelineno-10-54" name="__codelineno-10-54" href="#__codelineno-10-54"></a>    if v not in done:
+<a id="__codelineno-10-55" name="__codelineno-10-55" href="#__codelineno-10-55"></a>        done.add(v); applied.append(v)
+<a id="__codelineno-10-56" name="__codelineno-10-56" href="#__codelineno-10-56"></a>c3 = Consumer(b.log, dedup_handler); c3.run(crash_after=2); c3.run()
+<a id="__codelineno-10-57" name="__codelineno-10-57" href="#__codelineno-10-57"></a>print("applied with idempotent handler:", applied)
+</code></pre></div>
+<p>Expected output:</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-11-1" name="__codelineno-11-1" href="#__codelineno-11-1"></a>plain retries -&gt; ['a', 'b', 'b', 'b', 'c']
+<a id="__codelineno-11-2" name="__codelineno-11-2" href="#__codelineno-11-2"></a>idempotence -&gt; ['a', 'b', 'c']
+<a id="__codelineno-11-3" name="__codelineno-11-3" href="#__codelineno-11-3"></a>crashed ['a', 'b'] committed 1
+<a id="__codelineno-11-4" name="__codelineno-11-4" href="#__codelineno-11-4"></a>done ['a', 'b', 'b', 'c'] committed 3
+<a id="__codelineno-11-5" name="__codelineno-11-5" href="#__codelineno-11-5"></a>side effects by key (naive): {'a': 1, 'b': 2, 'c': 1}
+<a id="__codelineno-11-6" name="__codelineno-11-6" href="#__codelineno-11-6"></a>applied with idempotent handler: ['a', 'b', 'c']
+</code></pre></div>
+<p>??? success "Show a solution"</p>
+<div class="highlight"><pre><span></span><code>```
+class Producer:
+    """Idempotent producer model: retries after a lost ack must not create duplicates."""
+    def __init__(self, broker):
+        self.broker = broker
+        self.seq = 0
+
+    def send(self, value, fail_ack_times=0):
+        seq = self.seq
+        self.seq += 1
+        attempts = 0
+        while True:
+            attempts += 1
+            ack = self.broker.append(("p1", seq), value)
+            if attempts &gt; fail_ack_times:             # the first N acks are "lost" on the network
+                return attempts
+
+class Broker:
+    def __init__(self, dedupe):
+        self.log, self.seen, self.dedupe = [], set(), dedupe
+
+    def append(self, pid_seq, value):
+        if self.dedupe and pid_seq in self.seen:
+            return True                                # duplicate detected, already stored
+        self.seen.add(pid_seq)
+        self.log.append(value)
+        return True
+
+class Consumer:
+    """At-least-once consumer: commits after processing; a crash before the commit means reprocessing."""
+    def __init__(self, log, handler):
+        self.log, self.handler, self.committed = log, handler, 0
+
+    def run(self, crash_after=None):
+        processed = 0
+        while self.committed &lt; len(self.log):
+            self.handler(self.log[self.committed])
+            processed += 1
+            if crash_after is not None and processed == crash_after:
+                return "crashed"                       # processed but not yet committed
+            self.committed += 1
+        return "done"
+
+for dedupe in (False, True):
+    b = Broker(dedupe); p = Producer(b)
+    p.send("a"); p.send("b", fail_ack_times=2); p.send("c")
+    print("idempotence" if dedupe else "plain retries", "-&gt;", b.log)
+
+b = Broker(True); p = Producer(b)
+for v in "abc": p.send(v)
+seen = []
+c = Consumer(b.log, seen.append)
+print(c.run(crash_after=2), seen, "committed", c.committed)
+print(c.run(), seen, "committed", c.committed)
+effects = {}
+def idempotent(v): effects[v] = effects.get(v, 0) + 1
+c2 = Consumer(b.log, lambda v: idempotent(v)); c2.run(crash_after=2); c2.run()
+print("side effects by key (naive):", effects)
+done = set(); applied = []
+def dedup_handler(v):
+    if v not in done:
+        done.add(v); applied.append(v)
+c3 = Consumer(b.log, dedup_handler); c3.run(crash_after=2); c3.run()
+print("applied with idempotent handler:", applied)
+```
+
+Sequence numbers let the broker drop duplicate retries, while commit-after-processing gives at-least-once delivery, so side effects must be idempotent. Verified by running the solution.
+</code></pre></div>
+<hr />
+<p>More free practice: the <a href="../">Kafka Mastery Path</a> curriculum, the <a href="https://learnmasterypath.com/interview-pack/">Interview Prep Pack</a> and the <a href="https://learnmasterypath.com/resume/">free resume ATS check</a>.</p>
+
+
+
+
+
+
+
+  
+  
+
+
+
+
+
+
+                
+  
+  <nav class="mp-related" aria-label="Related free courses">
+    <h2>Related free courses</h2>
+    <ul>
+      <li><a href="https://learnmasterypath.com/server-ops-mastery-path/">Server Ops</a></li><li><a href="https://learnmasterypath.com/linux-mastery-path/">Linux</a></li><li><a href="https://learnmasterypath.com/nodemcu-mastery-path/">NodeMCU/IoT</a></li><li><a href="https://learnmasterypath.com/terraform-mastery-path/">Terraform</a></li><li><a href="https://learnmasterypath.com/kubernetes-mastery-path/">Kubernetes</a></li>
+      <li><a href="https://learnmasterypath.com/">All 100+ courses &rarr;</a></li>
+    </ul>
+  </nav>
+  
+
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  Back to top
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+    
+      
+      <nav class="md-footer__inner md-grid" aria-label="Footer" >
+        
+          
+          <a href=".." class="md-footer__link md-footer__link--prev" aria-label="Previous: Home">
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+            </div>
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Previous
+              </span>
+              <div class="md-ellipsis">
+                Home
+              </div>
+            </div>
+          </a>
+        
+        
+          
+          <a href="../level-1/" class="md-footer__link md-footer__link--next" aria-label="Next: Overview">
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Next
+              </span>
+              <div class="md-ellipsis">
+                Overview
+              </div>
+            </div>
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11z"/></svg>
+            </div>
+          </a>
+        
+      </nav>
+    
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+  <div class="mp-foot">
+    <div class="mp-foot-inner">
+      <a class="mp-foot-brand" href="https://learnmasterypath.com/"><svg class="mp-mark" viewBox="0 0 160 160" role="img" aria-label="Mastery Path logo">
+  <circle cx="80" cy="80" r="74" fill="#FAF7EF" stroke="#2FA98D" stroke-width="5"/>
+  <rect class="mp-bar mp-bar-1" x="36" y="90" width="17" height="24" rx="5" fill="#2FA98D"/>
+  <rect class="mp-bar mp-bar-2" x="59" y="74" width="17" height="40" rx="5" fill="#7FC9B7"/>
+  <rect class="mp-bar mp-bar-3" x="82" y="56" width="17" height="58" rx="5" fill="#E0B457"/>
+  <rect class="mp-bar mp-bar-4" x="105" y="38" width="17" height="76" rx="5" fill="#C97B4A"/>
+  <circle class="mp-dot" cx="44.5" cy="82" r="7" fill="#22261f"/>
+</svg><span>Mastery Path</span></a>
+      <nav class="mp-sitelinks" aria-label="Site and legal links">
+        <a href="https://learnmasterypath.com/">All courses</a>
+        <a href="https://learnmasterypath.com/about.html">About</a>
+        <a href="https://learnmasterypath.com/contact.html">Contact</a>
+        <a href="https://learnmasterypath.com/kafka-mastery-path/privacy/">Privacy Policy</a>
+        <a href="https://learnmasterypath.com/terms.html">Terms</a>
+        <a href="https://learnmasterypath.com/kafka-mastery-path/license/">License</a>
+        <a href="https://learnmasterypath.com/verify/">Verify a certificate</a>
+      </nav>
+    </div>
+    <p class="mp-license-note">
+      © 2026 Vinod Kumar Sigilipelli · Except where otherwise noted, lesson content is licensed under
+      <a rel="license" href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a> and code examples under the
+      <a href="https://opensource.org/license/mit">MIT License</a>.
+    </p>
+  </div>
+
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": "..", "features": ["navigation.path", "navigation.tabs", "navigation.sections", "navigation.expand", "navigation.top", "navigation.footer", "navigation.indexes", "toc.follow", "content.code.copy", "content.code.annotate", "search.suggest", "search.highlight"], "search": "../assets/javascripts/workers/search.a7633da7.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+    
+    
+      <script src="../assets/javascripts/bundle.a5f9d56c.min.js"></script>
+      
+        <script src="../javascripts/progress-tracker.js"></script>
+      
+        <script src="../javascripts/final-quiz.js"></script>
+      
+    
+  </body>
+</html>
